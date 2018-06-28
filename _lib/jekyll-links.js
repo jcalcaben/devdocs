@@ -7,6 +7,7 @@ var jekyllLinks = options => {
   options = options || {};
 
   let mapping = options.mapping;
+  let versionDirectory = options.versionDirectory;
 
   let jekyllLinkRegex = /^{{page.baseurl}}\/(.*?)\.html(.*?)$/;
 
@@ -17,7 +18,7 @@ var jekyllLinks = options => {
   let visitor = node => {
     matches = jekyllLinkRegex.exec(node.url);
     if (matches) {
-      let source = matches[1] + ".md";
+      let source = versionDirectory+'/'+matches[1] + ".md";
       let replacement = mapping.get(source);
       if (replacement) {
         node.url =

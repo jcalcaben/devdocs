@@ -203,9 +203,10 @@ gulp.task('migrate', () => {
 
   migrateDirectory({
     mappingFile: './_lib/v2.1-migration-mapping.csv',
-    directory: 'guides/v2.1',
+    versionDirectory: 'guides/v2.1',
+    subDirectory: 'pattern-library',
     destination: 'tmp',
-    destinationFormat: /\.md$/,
+    destinationFormat: /\.md|\.svg|\.jpg|\.png|\.ai|\.sketch$/,
     gulp: gulp,
     rootDirectory: __dirname
   })
