@@ -18,7 +18,7 @@ module.exports = (mapfile, callback) => {
     .then(jsonObj => {
       let map = new Map();
       jsonObj.forEach(element => {
-        if (element.original) {
+        if (element.original && element.new) {
           map.set(element.original, element.new);
         }
       });

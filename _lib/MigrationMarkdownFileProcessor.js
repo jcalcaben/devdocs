@@ -23,7 +23,7 @@ module.exports = config => {
    * @param {function(Error, object)} callback
    */
   MarkdownFileProcessor._transform = (file, encoding, callback) => {
-    console.log("Processing: "+file.path);
+    //console.log("Processing: "+file.path);
     let error = null;
 
     if(!/\.md$/.test(file.path)){
@@ -43,7 +43,7 @@ module.exports = config => {
           "/" + path.relative(config.cwd, file.path).replace(/\.md$/, ".html")
         ]
       ]),
-      remove: ["subgroup", "menu_title", "menu_order", "menu_node", "version", "level3_subgroup"]
+      remove: ["subgroup", "menu_title", "menu_order", "menu_node", "version", "level3_subgroup","externalURL"]
     };
 
     // Calculate and add new github link
@@ -66,7 +66,8 @@ module.exports = config => {
         gfm: false
       })
       .use(jekyllLinks, {
-        mapping: config.mapping
+        mapping: config.mapping,
+        versionDirectory: config.versionDirectory
       })
       .use(frontmatter)
       .use(parseFrontMatter)

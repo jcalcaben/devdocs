@@ -26,7 +26,7 @@ module.exports = (map, baseDir, destinationFormat) => {
       let destination = map.get(filename);
       if (destinationFormat.test(destination)) {
         file.dirname = path.dirname(destination);
-        file.basename = path.basename(destination, ".md");
+        file.basename = path.basename(destination, path.extname(destination));
         file.extname = path.extname(destination);
       } else {
         file.dirname = "_skipped/" + file.dirname;

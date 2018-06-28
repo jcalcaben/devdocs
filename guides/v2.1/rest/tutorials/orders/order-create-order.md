@@ -87,7 +87,7 @@ Not applicable
 **Response**
 
 {% collapsible Show code sample %}
-{% highlight json %}
+```json
 
 {
     "applied_rule_ids": "1",
@@ -1570,7 +1570,7 @@ Not applicable
     }
 }
 
-{% endhighlight %}
+```
 {% endcollapsible %}
 
 ### Verify this step {#verify-step}
