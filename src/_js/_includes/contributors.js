@@ -9,7 +9,7 @@
  * <div id="elem" data-plugin-options='{"contributorsLimit": 3}'>
 */
 
-;(function( $, window, document, undefined ) {
+module .exports = function( $, window, document, undefined ) {
 
   var pluginName = 'contributorsList';
 
@@ -269,4 +269,4 @@
   }
 
 
-})(jQuery, window, document);// end contributors
+}// end contributors

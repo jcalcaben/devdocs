@@ -7,67 +7,57 @@
 //  ---------------------------------------------
 
 var gulp = require('gulp'),
-   gutil = require('gulp-util'),
-   concat = require('gulp-concat'),
-   uglify = require('gulp-uglify'),
-   sass = require('gulp-sass'),
-   imagemin = require('gulp-imagemin'),
-   sourcemaps = require('gulp-sourcemaps'),
-   autoprefixer = require('gulp-autoprefixer'),
-   rename = require('gulp-rename'),
-   del = require('del'),
-   include = require('gulp-include'),
-   jekyll = require('gulp-jekyll'),
-   spawn = require('child_process').spawn,
-   exec = require('child_process').exec,
-   browsersync = require('browser-sync'),
-   reload = browsersync.reload,
+   fs =  require('fs'),
+   rename = require('gulp-rename')
 
+require('jekyll-tasks')(gulp)
 //
 //  Paths
 //  ---------------------------------------------
 
-   paths = {
-      icons: 'icons/*.svg',
-      html: [
-      	'guides/**/*.{html,md}',
-        '_includes/**/*.html',
-			  '_layouts/**/*.html',
-        '_videos/**/*',
-  //      'css/**/*.css',
-        '*.html'
-		],
-      styles: 'scss/**/*.scss',
-      scripts: [
-      	'js/**/*.js',
-        '!js/_vendor/**/*.js',
-        '!js/_includes/**/*.js'
-		],
-   	images: 'i/**/*',
-   	fonts: 'font/**/*',
-   },
-   destHtml = '_site/',
-   destJS = 'common/js/',
-   destImg = '_site/i/',
-   destCSS = 'common/css/',
-   destCSS2 = '_site/common/css'
-   destFonts = '_site/font/',
-   destIcons = '_site/font/icons/',
+//   paths = {
+//      icons: 'icons/*.svg',
+//      html: [
+//      	'guides/**/*.{html,md}',
+//        '_includes/**/*.html',
+//			  '_layouts/**/*.html',
+//        '_videos/**/*',
+//  //      'css/**/*.css',
+//        '*.html'
+//		],
+//      styles: 'scss/**/*.scss',
+//      scripts: [
+//      	'js/**/*.js',
+//        '!js/_vendor/**/*.js',
+//        '!js/_includes/**/*.js'
+//		],
+//   	images: 'i/**/*',
+//   	fonts: 'font/**/*',
+//   },
+//   destHtml = '_site/',
+//   destJS = 'common/js/',
+//   destImg = '_site/i/',
+//   destCSS = 'common/css/',
+//   destCSS2 = '_site/common/css'
+//   destFonts = '_site/font/',
+//   destIcons = '_site/font/icons/',
+//
+//	//  BrowserSync config
+//
+//   bsconfig = {
+//		server: {
+//			baseDir: destHtml
+//   	},
+//    notify: false,
+//   	port: 9999,
+//   	files: [
+//      paths.scripts,
+//      paths.images
+//		]
+//	};
 
-	//  BrowserSync config
 
-   bsconfig = {
-		server: {
-			baseDir: destHtml
-   	},
-    notify: false,
-   	port: 9999,
-   	files: [
-      paths.scripts,
-      paths.images
-		]
-	};
-
+/*
 //
 //  Tasks
 //  ---------------------------------------------
@@ -86,30 +76,32 @@ gulp.task('move', function() {
 	gulp.src(paths.fonts)
 		.pipe( gulp.dest(destFonts) );
 });
-
-//  Scripts
-gulp.task('scripts', function () {
-   // Minify and copy all JavaScript (except vendor scripts)
-   // with sourcemaps all the way down
-   //gulp.src('js/vendor/**/*').pipe(gulp.dest(destJS + 'vendor/'));
-
-  return gulp.src(paths.scripts)
-   	.pipe(sourcemaps.init())
-   	.pipe(include())
-		.pipe(uglify())
-    .on('error', function (err) { gutil.log(gutil.colors.red('[Error]'), err.toString()); })
-    //.pipe(sourcemaps.write())
-		//.pipe(concat('app.min.js'))
-		.pipe(rename({suffix: '.min'}))
-    .pipe(gulp.dest(destJS))
-    .pipe(gulp.dest( destHtml + 'common/js/' ))
-    .on('error', gutil.log)
-    .pipe(reload({stream: true}));
-});
+*/
 
 
+////  Scripts
+//gulp.task('scripts', function () {
+//   // Minify and copy all JavaScript (except vendor scripts)
+//   // with sourcemaps all the way down
+//   //gulp.src('js/vendor/**/*').pipe(gulp.dest(destJS + 'vendor/'));
+//
+//  return gulp.src(paths.scripts)
+//   	.pipe(sourcemaps.init())
+//   	.pipe(include())
+//		.pipe(uglify())
+//    .on('error', function (err) { gutil.log(gutil.colors.red('[Error]'), err.toString()); })
+//    //.pipe(sourcemaps.write())
+//		//.pipe(concat('app.min.js'))
+//		.pipe(rename({suffix: '.min'}))
+//    .pipe(gulp.dest(destJS))
+//    .pipe(gulp.dest( destHtml + 'common/js/' ))
+//    .on('error', gutil.log)
+//    .pipe(reload({stream: true}));
+//});
+//
 
 
+/*
 //  Images
 gulp.task('images', ['clean'], function () {
    return gulp.src(paths.images)
@@ -118,7 +110,8 @@ gulp.task('images', ['clean'], function () {
       .on('error', gutil.log);
 	//.pipe(livereload(server));
 });
-
+*/
+/*
 // Styles
 gulp.task('styles', function () {
    gulp.src(paths.styles)
@@ -138,8 +131,9 @@ gulp.task('styles', function () {
       .pipe(reload({stream: true}));
 
 });
-
+*/
 // Compile html files. Use _config.yml and _config.local.yml.
+/*
 gulp.task('jekyll', function (gulpCallBack) {
 
    var jekyll = spawn('bundle', ['exec','jekyll','build', '--config', '_config.yml,_config.local.yml'], {stdio: 'inherit'});
@@ -158,10 +152,12 @@ gulp.task('jekyll', function (gulpCallBack) {
 gulp.task('browser-sync', function () {
    browsersync(bsconfig);
 });
+*/
 
 /*
 * Rerun the task and reload the browser when changing, adding, or removing a file. Uses the gulp.watch API.
 */
+/*
 gulp.task('watch', function () {
   browsersync(bsconfig);
   var watcher =
@@ -173,8 +169,10 @@ gulp.task('watch', function () {
       gutil.log(gutil.colors.bgYellow.black('File: ' + event.path + ' was ' + event.type + ', running tasks...'));
   });
 });
+*/
 
 // The default task (called when you run `gulp` from cli)
+/*
 gulp.task('default',
   [
 	  'move',
@@ -184,7 +182,7 @@ gulp.task('default',
     'watch'
   ]
 );
-
+*/
 /*
 *********************
 * Local development *
@@ -193,7 +191,7 @@ gulp.task('default',
 /*
 * Use `gulp dev` to run local development tasks (e.g., compile HTML, watch source files for changes, recompile HTML, start local web server, and auto reload page after recompiling HTML).
 */
-gulp.task('dev', ['jekyll', 'watch']);
+//gulp.task('dev', ['jekyll', 'watch']);
 
 /**
  * A gulp task for the directory structure migration
@@ -201,11 +199,29 @@ gulp.task('dev', ['jekyll', 'watch']);
 gulp.task('migrate', () => {
   let migrateDirectory = require('./_lib/DirectoryMigrator');
 
+  gulp.src("index.html").pipe(gulp.dest('src'));
+
+  gulp.src("_layouts/**/*.*").pipe(gulp.dest('src/_layouts'))
+  gulp.src("_plugins/**/*.*").pipe(gulp.dest('src/_plugins'))
+  gulp.src("_includes/**/*.*").pipe(gulp.dest('src/_includes'))
+  gulp.src("_data/**/*.*").pipe(gulp.dest("src/_data"))
+  gulp.src("scss/partials/**/*.scss").pipe(gulp.dest('src/_scss/partials'))
+  gulp.src("scss/_variables.scss").pipe(gulp.dest('src/_scss'))
+
+  gulp.src("scss/devdocs.scss")
+    .pipe(rename(path=>{
+      path.basename = 'main'
+    }))
+    .pipe(gulp.dest('src/_scss'))
+
+  gulp.src("_config.yml").pipe(gulp.dest('src'))
+  gulp.src("404.md").pipe(gulp.dest('src'))
+
   migrateDirectory({
     mappingFile: './_lib/v2.1-migration-mapping.csv',
     versionDirectory: 'guides/v2.1',
     subDirectory: 'pattern-library',
-    destination: 'tmp',
+    destination: 'src',
     destinationFormat: /\.md|\.svg|\.jpg|\.png|\.ai|\.sketch$/,
     gulp: gulp,
     rootDirectory: __dirname
