@@ -17,7 +17,7 @@ You're done!
 
 <div class="bs-callout bs-callout-info" id="info">
   <ul><li>Additional tasks might be required to deploy multiple websites in a hosted environment; check with your hosting provider for more information.</li>
-    <li>Additional tasks are required to set up {{site.data.var.ece}}; for more information, see <a href="{{ page.baseurl }}/cloud/project/project-multi-sites.html">Set up multiple Cloud websites or stores</a></li></ul>
+    <li>Additional tasks are required to set up {{site.data.var.ece}}; for more information, see <a href="{{page.baseurl}}/cloud/project/project-multi-sites.html">Set up multiple Cloud websites or stores</a></li></ul>
 </div>
 
 ### Troubleshooting

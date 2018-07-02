@@ -123,7 +123,7 @@ This section discusses how to verify your upgrade and to troubleshoot any issues
 
 To verify the upgrade in your integration, staging, or production system:
 
-1.  [SSH to the server]({{ page.baseurl }}/cloud/env/environments-ssh.html).
+1.  [SSH to the server]({{page.baseurl}}/cloud/env/environments-ssh.html).
 2.  Enter the following command from your Magento root directory to verify the installed version:
 
         php bin/magento --version
@@ -152,8 +152,8 @@ One possible error occurs when the deployment hook failed, and therefore the dat
 
 To resolve the error:
 
-1.  [SSH to the server]({{ page.baseurl }}/cloud/env/environments-ssh.html).
-2.  [Examine the logs]({{ page.baseurl }}/cloud/trouble/environments-logs.html) to determine the source of the issue.
+1.  [SSH to the server]({{page.baseurl}}/cloud/env/environments-ssh.html).
+2.  [Examine the logs]({{page.baseurl}}/cloud/trouble/environments-logs.html) to determine the source of the issue.
 3.  After you fix the source of the issue, push the change to the server, which causes the upgrade to restart.
 
     For example, on a local branch, enter the following commands:

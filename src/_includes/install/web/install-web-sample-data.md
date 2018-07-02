@@ -2,7 +2,7 @@
 
 ## Install sample data before the Magento software
 
-This topic discusses how to install optional Magento sample data *before* you install the Magento software. If you've already installed Magento, go <a href="{{ page.baseurl }}/install-gde/install/sample-data.html">here</a>.
+This topic discusses how to install optional Magento sample data *before* you install the Magento software. If you've already installed Magento, go <a href="{{page.baseurl}}/install-gde/install/sample-data.html">here</a>.
   
 {% include install/sample-data.html %}
 

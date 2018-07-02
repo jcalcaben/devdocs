@@ -6,7 +6,7 @@ This section discusses how to see if cron is currently running and to verify whe
 
 To verify whether or not your crontab is set up:
 
-1.	Log in to your Magento server as, or switch to, the [Magento file system owner]({{ page.baseurl }}/install-gde/prereq/file-sys-perms-over.html).
+1.	Log in to your Magento server as, or switch to, the [Magento file system owner]({{page.baseurl}}/install-gde/prereq/file-sys-perms-over.html).
 2.	See if the following file exists:
 
 		ls -al <your Magento install dir>/var/.setup_cronjob_status
@@ -42,7 +42,7 @@ To verify your cron jobs are set up properly, see [Set up cron jobs]({{ page.bas
 
 If your cron job uses a PHP binary different from the web server plug-in, PHP settings errors might display. To resolve the issue, set identical PHP settings for both the PHP command line and the PHP web server plug-in.
 
-For more information about PHP settings, see [Required PHP settings]({{ page.baseurl }}/install-gde/prereq/php-settings.html).
+For more information about PHP settings, see [Required PHP settings]({{page.baseurl}}/install-gde/prereq/php-settings.html).
 
 ### Solution: cron running with errors
 

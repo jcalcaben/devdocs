@@ -32,11 +32,11 @@ For example, to install 2.1.1 in the `magento2` directory:
 
 After you get the Commerce software:
 
-1.	[Set file system ownership and permissions]({{ page.baseurl }}/install-gde/prereq/file-system-perms.html).
+1.	[Set file system ownership and permissions]({{page.baseurl}}/install-gde/prereq/file-system-perms.html).
 2.	Install the software:
 
-	*	[Web Setup Wizard]({{ page.baseurl }}/install-gde/install/web/install-web.html)
-	*	[Command line]({{ page.baseurl }}/install-gde/install/cli/install-cli.html)
+	*	[Web Setup Wizard]({{page.baseurl}}/install-gde/install/web/install-web.html)
+	*	[Command line]({{page.baseurl}}/install-gde/install/cli/install-cli.html)
 
 ## Upgrade from an earlier version
 
