@@ -18,6 +18,8 @@ module.exports = migrationConfig => {
       .src(globPathPrefix + "/**/*.*")
       .pipe(replace(/{{\s+page.baseurl\s+}}/g, "{{page.baseurl}}")) //Compress {{ page.baseurl }} so Jekyll URL's can be parsed
       .pipe(replace(/{{\s+(site.mage2.00url)\s+}}/g, "{{$1}}")) //Compress {{ site.mage2x00url }} entries
+      .pipe(replace(/{{\s+(site.baseurl)\s+}}/g, "{{$1}}")) //Compress {{ site.baseurl }} entries
+      .pipe(replace(/{{site.baseurl}}\/common\/images/g, "{{site.baseurl}}/static/images")) //update image directories
       .pipe(
         mdfileprocessor({
           cwd: rootDirectory,

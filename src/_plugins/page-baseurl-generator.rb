@@ -16,17 +16,14 @@ module Jekyll
       baseurl = site.baseurl
       pages.each do |page|
         matcher = pattern.match(page.path)
-        version =
-          if page.data['guide_version']
-            page.data['guide_version']
-          elsif matcher
-            matcher[1]
-          end
-        page.data['baseurl'] = if version
-                                 "#{baseurl}/guides/v#{version}"
-                               else
-                                 baseurl
-                               end
+        versionPath = page.data['versionPath']
+        version = if matcher
+                    matcher[1]
+                  else
+                    config_version
+                  end
+        page.data['baseurl'] = "#{baseurl}#{versionPath}"
+
         page.data['guide_version'] = version
       end
     end
