@@ -180,11 +180,11 @@ This indicates a null value.
 
 Node Format:
 
-: ~~~
+~~~
   <argument xsi:type="array">
     <item name="someKey" xsi:type="<type>">someVal</item>
   </argument>
-  ~~~
+~~~
 
 Magento builds an array with elements corresponding to the items and passes it as the argument.
 The array can contain an infinite number of items, and each array item can be of any object type including an array itself.
