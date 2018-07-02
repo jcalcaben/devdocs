@@ -4,7 +4,7 @@ After you pass all readiness checks, you can back up:
 *	The `pub/media` directory
 *	The Magento 2 database
 
-Backups are stored in the `var/backups` directory and can be restored at any time using the [`magento setup:rollback`]({{ page.baseurl }}/install-gde/install/cli/install-cli-uninstall-mods.html#instgde-cli-uninst-mod-roll) or using the Magento Admin.
+Backups are stored in the `var/backups` directory and can be restored at any time using the [`magento setup:rollback`]({{page.baseurl}}/install-gde/install/cli/install-cli-uninstall-mods.html#instgde-cli-uninst-mod-roll) or using the Magento Admin.
 
 To back up:
 
@@ -12,7 +12,7 @@ To back up:
 
 	The following figure shows an example of backing up everything.
 
-	![You can back up the Magento 2 file system, media directory, and database]({{ site.baseurl }}/common/images/modman_create-backup.png){:width="550px"}
+	![You can back up the Magento 2 file system, media directory, and database]({{site.baseurl}}/common/images/modman_create-backup.png){:width="550px"}
 
 	(If you choose not to back up, clear all checkboxes and click **Next**.)
 
@@ -23,6 +23,6 @@ To back up:
 
 The following page displays to confirm a successful backup.
 
-![A page displays to confirm your backup was a success]({{ site.baseurl }}/common/images/extensman_backup-success.png){:width="650px"}
+![A page displays to confirm your backup was a success]({{site.baseurl}}/static/images/extensman_backup-success.png){:width="650px"}
 
-If errors display, see [Troubleshoot backups]({{ page.baseurl }}/comp-mgr/trouble/cman/tshoot_backup.html)
+If errors display, see [Troubleshoot backups]({{page.baseurl}}/comp-mgr/trouble/cman/tshoot_backup.html)

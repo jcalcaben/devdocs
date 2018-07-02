@@ -60,4 +60,4 @@ cd /var/www/html/magento2 && find var vendor pub/static pub/media app/etc -type 
 ```
 
 <!-- Link definitions -->
-[Overview of ownership and permissions]: {{ page.baseurl }}/install-gde/prereq/file-sys-perms-over.html
+[Overview of ownership and permissions]: {{page.baseurl}}/install-gde/prereq/file-sys-perms-over.html

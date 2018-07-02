@@ -7,8 +7,8 @@ If you're using an Magento version 2.0.5 or earlier, see [Appendix&mdash;Magento
 
 This topic provides some basic information about our ownership and permissions guidelines. For additional information, see:
 
-*	[Set pre-installation ownership and permissions]({{ page.baseurl }}/install-gde/prereq/file-system-perms.html)
-*	[Magento ownership and permissions in development and production]({{ page.baseurl }}/config-guide/prod/prod_file-sys-perms.html)
+*	[Set pre-installation ownership and permissions]({{page.baseurl}}/install-gde/prereq/file-system-perms.html)
+*	[Magento ownership and permissions in development and production]({{page.baseurl}}/config-guide/prod/prod_file-sys-perms.html)
 
 ### Magento file system owner
 
@@ -33,11 +33,11 @@ The Magento file system owner is any of the following:
 
 	*	A *command-line user*, which is a local user account you can use to log in to the server. This user runs Magento cron jobs and command-line utilities.
 
-		The web server user and the command-line user might need write permissions to the Magento file system. (The users require write access in [developer mode]({{ page.baseurl }}/config-guide/bootstrap/magento-modes.html) but not in production mode.) You give permissions to both users by way of a shared group to which they both belong.
+		The web server user and the command-line user might need write permissions to the Magento file system. (The users require write access in [developer mode]({{page.baseurl}}/config-guide/bootstrap/magento-modes.html) but not in production mode.) You give permissions to both users by way of a shared group to which they both belong.
 
 		For private hosting, we recommend you use the default `002` [umask](#restrict); otherwise, the group won't be able to write to the Magento file system.
 
-Before you install the Magento software, see [Set pre-installation ownership and permissions]({{ page.baseurl }}/install-gde/prereq/file-system-perms.html).
+Before you install the Magento software, see [Set pre-installation ownership and permissions]({{page.baseurl}}/install-gde/prereq/file-system-perms.html).
 
 ### Restrict access with a umask {#restrict}
 
@@ -54,7 +54,7 @@ Here's what that means:
 
 *	664 for files, which means writable by the user, writable by the group, and read-only for everyone else.
 
-For more information about `magento_umask`, see [Optionally set a umask]({{ page.baseurl }}/install-gde/install/post-install-umask.html).
+For more information about `magento_umask`, see [Optionally set a umask]({{page.baseurl}}/install-gde/install/post-install-umask.html).
 
 ## Permissions, ownership, and Magento modes
 

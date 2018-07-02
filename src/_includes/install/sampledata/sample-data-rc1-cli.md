@@ -66,5 +66,5 @@ After you have reset file system permissions:
 {% include install/sampledata/file-sys-perms-digest.md %}
 
 <!-- Link definitions -->
-[Magento file system owner]: {{ page.baseurl }}/install-gde/prereq/file-sys-perms-over.html
-[authentication keys]: {{ page.baseurl }}/install-gde/prereq/connect-auth.html
+[Magento file system owner]: {{page.baseurl}}/install-gde/prereq/file-sys-perms-over.html
+[authentication keys]: {{page.baseurl}}/install-gde/prereq/connect-auth.html

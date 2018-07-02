@@ -1,12 +1,24 @@
+<<<<<<< HEAD
 This section discusses how to install the Magento software using a web-based wizard interface. To install Magento from the command line, see [Install Magento software using the command line]({{ page.baseurl }}/install-gde/install/cli/install-cli.html).
+=======
+<div markdown="1">
+
+This section discusses how to install the Magento software using a web-based wizard interface. To install Magento from the command line, see <a href="{{page.baseurl}}/install-gde/install/cli/install-cli.html">Install Magento software using the command line</a>.
+>>>>>>> Fix image links and link format in _include files
 
 ## Before you start your installation   {#instgde-install-prereq}
 
 Before you begin, make sure that:
 
+<<<<<<< HEAD
 1.	Your system meets the requirements discussed in [Magento System Requirements]({{ page.baseurl }}/install-gde/system-requirements.html).
 2.	You completed all prerequisite tasks discussed in [Prerequisites]({{ page.baseurl }}/install-gde/prereq/prereq-overview.html).
 4.	After you log in to the Magento server, [switch to the Magento file system owner]({{ page.baseurl }}/install-gde/prereq/file-sys-perms-over.html).
+=======
+1.	Your system meets the requirements discussed in <a href="{{page.baseurl}}/install-gde/system-requirements.html">Magento System Requirements</a>.
+2.	You completed all prerequisite tasks discussed in <a href="{{page.baseurl}}/install-gde/prereq/prereq-overview.html">Prerequisites</a>.
+4.	After you log in to the Magento server, <a href="{{page.baseurl}}/install-gde/prereq/file-sys-perms-over.html">switch to the Magento file system owner</a>.
+>>>>>>> Fix image links and link format in _include files
 
 ### Enabling and disabling modules   {#instgde-install-web-enable-mod}
 

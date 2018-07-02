@@ -20,12 +20,12 @@ To configure Magento to use Elasticsearch:
 	<tr>
 		<td>Elasticsearch Server Hostname</td>
 		<td><p>Enter the fully qualified hostname or IP address of the machine running Elasticsearch.</p>
-		<p>{{site.data.var.ece}}: <a href="{{ page.baseurl }}/cloud/project/project-conf-files_services-elastic.html#cloud-es-config-mg">Get this value</a> from your integration system.</p> </td>
+		<p>{{site.data.var.ece}}: <a href="{{page.baseurl}}/cloud/project/project-conf-files_services-elastic.html#cloud-es-config-mg">Get this value</a> from your integration system.</p> </td>
 	</tr>
 	<tr>
 		<td>Elasticsearch Server Port</td>
 		<td><p>Enter the Elasticsearch web server proxy port. In our example, the port is <code>8080</code> but if you're using a secure proxy, it's typically <code>443</code>.</p>
-		<p>{{site.data.var.ece}}: <a href="{{ page.baseurl }}/cloud/project/project-conf-files_services-elastic.html#cloud-es-config-mg">Get this value</a> from your integration system.</p></td>
+		<p>{{site.data.var.ece}}: <a href="{{page.baseurl}}/cloud/project/project-conf-files_services-elastic.html#cloud-es-config-mg">Get this value</a> from your integration system.</p></td>
 	</tr>
 	<tr>
 		<td>Elasticsearch Index Prefix</td>
@@ -47,11 +47,11 @@ One of the following displays:
 	<th>Meaning</th>
 	</tr>
 	<tr>
-		<td><img src="{{ site.baseurl }}/common/images/elastic_test-success.png"></td>
+		<td><img src="{{site.baseurl}}/static/images/elastic_test-success.png"></td>
 		<td>Magento successfully connected to the Elasticsearch server. Continue with <a href="{{ site.gdeurl21 }}config-guide/elasticsearch/es-config-apache.html">Configure Apache and Elasticsearch</a> or <a href="{{ site.gdeurl21 }}config-guide/elasticsearch/es-config-nginx.html">Configure nginx and Elasticsearch</a>.</td>
 	</tr>
 	<tr>
-		<td><img src="{{ site.baseurl }}/common/images/elastic_test-fail.png"></td>
+		<td><img src="{{site.baseurl}}/static/images/elastic_test-fail.png"></td>
 		<td><p>Try the following:</p>
 			<ul>
 				<li>Make sure the Elasticsearch server is running.</li>

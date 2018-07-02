@@ -36,7 +36,7 @@ If the Magento file system owner doesn't have permissions to write to directorie
 	file_put_contents(/var/www/html/magento2ce/var/composer_home/cache/repo/https---
 	packagist.org/provider-doctrine$instantiator.json): failed to open stream: Permission denied
 
-Make sure you set file system permissions as discussed in [Overview of ownership and permissions]({{ page.baseurl }}/install-gde/prereq/file-sys-perms-over.html).
+Make sure you set file system permissions as discussed in [Overview of ownership and permissions]({{page.baseurl}}/install-gde/prereq/file-sys-perms-over.html).
 
 ### The Component Dependency Check status never changes {#trouble-depend-state}
 

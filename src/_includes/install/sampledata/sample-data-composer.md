@@ -7,12 +7,12 @@ This section discusses how to install sample data if you got the Magento softwar
     If you downloaded an archive from Github, this method won't work because the `composer.json` file doesn't contain the `repo.magento.com` URL.
 *   Used `composer create-project`
 
-You can use this method of getting sample data for both {{site.data.var.ce}} or {{site.data.var.ee}}, but you must use the same [authentication keys]({{ page.baseurl }}/install-gde/prereq/connect-auth.html) you used to install Magento.
+You can use this method of getting sample data for both {{site.data.var.ce}} or {{site.data.var.ee}}, but you must use the same [authentication keys]({{page.baseurl}}/install-gde/prereq/connect-auth.html) you used to install Magento.
 
 {:.bs-callout .bs-callout-info}
 If you encounter errors, such as `Could not find package...` or `...no matching package found...`, make sure there aren’t any typos in your command. If you still encounter errors, you may not have access to the right Composer repositories, especially if your using {{site.data.var.ee}}. Contact [Magento support](https://magento.com/support) for help.
 
-You can use Composer to install sample data either before or after installing Magento; however, there might be [additional tasks]({{ page.baseurl }}/install-gde/install/sample-data.html).
+You can use Composer to install sample data either before or after installing Magento; however, there might be [additional tasks]({{page.baseurl}}/install-gde/install/sample-data.html).
 
 If you're a contributing developer, refer to [Install by cloning repositories]({{install-gde/install/sample-data-after-clone.html}}).
 

@@ -31,15 +31,15 @@ For example, to install {{site.data.var.ce}} 2.0.10 in the `magento2` directory:
 
 After you get the Open Source software:
 
-1.	[Set file system ownership and permissions]({{ page.baseurl }}/install-gde/prereq/file-system-perms.html).
+1.	[Set file system ownership and permissions]({{page.baseurl}}/install-gde/prereq/file-system-perms.html).
 2.	Install the Magento software:
 
-	*	[Web Setup Wizard]({{ page.baseurl }}/install-gde/install/web/install-web.html)
-	*	[Command line]({{ page.baseurl }}/install-gde/install/cli/install-cli.html)
+	*	[Web Setup Wizard]({{page.baseurl}}/install-gde/install/web/install-web.html)
+	*	[Command line]({{page.baseurl}}/install-gde/install/cli/install-cli.html)
 
 ## Upgrade from an earlier version {#upgrade}
 
 To upgrade to version 2.0.x from an earlier version:
 
-*	[Web Setup Wizard (System Upgrade)]({{ page.baseurl }}/comp-mgr/upgrader/upgrade-start.html)
-*	[Command-line upgrade]({{ page.baseurl }}/comp-mgr/cli/cli-upgrade.html)
+*	[Web Setup Wizard (System Upgrade)]({{page.baseurl}}/comp-mgr/upgrader/upgrade-start.html)
+*	[Command-line upgrade]({{page.baseurl}}/comp-mgr/cli/cli-upgrade.html)
