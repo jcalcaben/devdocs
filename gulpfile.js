@@ -9,6 +9,7 @@
 var gulp = require('gulp'),
    fs =  require('fs'),
    rename = require('gulp-rename')
+   replace = require("gulp-replace");
 
 require('jekyll-tasks')(gulp)
 //
@@ -220,10 +221,30 @@ gulp.task('migrate', () => {
   migrateDirectory({
     mappingFile: './_lib/v2.1-migration-mapping.csv',
     versionDirectory: 'guides/v2.1',
-    subDirectory: 'pattern-library',
+    subDirectory: 'architecture',
     destination: 'src',
     destinationFormat: /\.md|\.svg|\.jpg|\.png|\.ai|\.sketch$/,
     gulp: gulp,
     rootDirectory: __dirname
   })
 });
+
+gulp.task('fix-pattern-library', () => {
+  gulp.src("guides/v2.1/pattern-library/**/*.md")
+    .pipe(replace(/<h3>([^<]*?)<\/h3>/g, "### $1"))
+    .pipe(replace(/<h3 id="([^"]*?)">([^<]*?)<\/h3>/g, "### $2\n{: .$1}"))
+    .pipe(replace(/<h4>([^<]*?)<\/h4>/g, "#### $1"))
+    .pipe(replace(/<h4 id="([^"]*?)">([^<]*?)<\/h4>/g, "#### $2\n{: .$1}"))
+    .pipe(gulp.dest( file => {
+      return file.base;
+    }))
+})
+
+gulp.task('fix-architecture', () => {
+  gulp.src("guides/v2.1/architecture/**/*.md")
+    .pipe(replace(/<a href="([^"]*?)"[^>]*?>([^<]*?)<\/a>/g,"[$2]($1)")) //Replace all html links with markdown. Be careful with using this when links are inside tables. 
+    .pipe(replace(/<\/([^>]*?)>\n+/g,"</$1>\n")) //Fix multiple empty lines between html end tag and the next line
+    .pipe(gulp.dest( file => {
+    return file.base;
+  }))
+})

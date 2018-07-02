@@ -10,6 +10,7 @@ var stringify = require("remark-stringify");
 var parseFrontMatter = require("remark-parse-yaml");
 var attr = require("remark-attr");
 var jekyllLinks = require("./jekyll-links");
+var htmlConverter = require('./html-to-markdown');
 
 var frontMatterFixer = require("./remark-front-matter-fixer");
 
@@ -65,6 +66,7 @@ module.exports = config => {
         bullet: "*",
         gfm: false
       })
+      .use(htmlConverter, {})
       .use(jekyllLinks, {
         mapping: config.mapping,
         versionDirectory: config.versionDirectory
