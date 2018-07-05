@@ -1,3 +1,8 @@
+---
+name: Community issue
+about: Create an issue related to a community engineering effort
+---
+
 <!-- (REQUIRED) Provide information for the doc request including any Community code issues or PRs, Magento versions, or devdoc pages. -->
 Type of Doc:
 - [ ] New topic
