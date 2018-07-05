@@ -3,25 +3,25 @@ name: New feature
 about: Create a request for new functionality in devdocs
 ---
 
-## Description (required)
+## Description
 
-<!-- Describe the feature you want added to devdocs -->
+<!-- (REQUIRED) Describe the feature you want added to devdocs -->
 
-## Expected result (required)
+## Expected result
 
-<!-- When this feature is implemented, what is the expected result/behavior? -->
+<!-- (REQUIRED) When this feature is implemented, what is the expected result/behavior? -->
 
-## Benefits (required)
+## Benefits
 
-<!-- How does this feature improve the devdocs experience? -->
+<!-- (REQUIRED) How does this feature improve the devdocs experience? -->
 
-## Possible solutions (optional)
+## Possible solutions
 
-<!-- What would a solution for this issue look like? -->
+<!-- (OPTIONAL) What would a solution for this issue look like? -->
 
-## Additional information (optional)
+## Additional information
 
-<!-- What other information can you provide about this feature? -->
+<!-- (OPTIONAL) What other information can you provide about this feature? -->
 
 <!--
 Thank you for taking the time to report this issue!

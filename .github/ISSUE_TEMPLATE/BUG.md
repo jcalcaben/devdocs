@@ -3,29 +3,29 @@ name: Bug report
 about: Create an issue about a bug on the devdocs website
 ---
 
-## Description (required)
+## Description
 
-<!-- What is the issue/current behavior? -->
+<!-- (REQUIRED) What is the issue/current behavior? -->
 
-### Steps to reproduce (optional)
+### Steps to reproduce
 
-<!-- What needs to be done to replicate this issue? (provide Gist if needed) -->
+<!-- (OPTIONAL) What needs to be done to replicate this issue? (provide Gist if needed) -->
 
 1. First Step
 2. Second Step
 3. Etc.
 
-## Expected result (required)
+## Expected result
 
-<!-- When this issue is resolved, what is the expected result/behavior? -->
+<!-- (REQUIRED) When this issue is resolved, what is the expected result/behavior? -->
 
-## Possible solutions (optional)
+## Possible solutions
 
-<!-- What would a solution for this issue look like? -->
+<!-- (OPTIONAL) What would a solution for this issue look like? -->
 
-## Additional information (optional)
+## Additional information
 
-<!-- What other information can you provide about this issue? -->
+<!-- (OPTIONAL) What other information can you provide about this issue? -->
 
 <!--
 Thank you for taking the time to report this issue!

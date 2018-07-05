@@ -28,14 +28,14 @@ Notifications of Changes:
 - [ ] New command line option?
 
 
-## Content (required)
+## Content
 
-<!-- What new information or updates are required for your Community contribution? -->
+<!-- (REQUIRED) What new information or updates are required for your Community contribution? -->
 
 
-## Additional information (optional)
+## Additional information
 
-<!-- What other information can you provide? -->
+<!-- (OPTIONAL) What other information can you provide? -->
 
 
 <!--

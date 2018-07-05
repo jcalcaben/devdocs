@@ -2,21 +2,21 @@
 name: Topic clarification/correction
 about: Create a request to clarify or correct a documentation topic
 ---
-## Topic Link (required)
+## Topic Link
 
-<!-- A link to the topic that needs clarification -->
+<!-- (REQUIRED) A link to the topic that needs clarification -->
 
-## Description (required)
+## Description
 
-<!-- What needs to be clarified or corrected in this topic -->
+<!-- (REQUIRED) What needs to be clarified or corrected in this topic -->
 
-## Possible solutions (optional)
+## Possible solutions
 
-<!-- What would a solution for this issue look like? -->
+<!-- (OPTIONAL) What would a solution for this issue look like? -->
 
-## Additional information (optional)
+## Additional information
 
-<!-- What other information can you provide about this issue? -->
+<!-- (OPTIONAL) What other information can you provide about this issue? -->
 
 <!--
 Thank you for taking the time to report this issue!

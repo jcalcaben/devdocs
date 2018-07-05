@@ -3,22 +3,22 @@ name: New topic
 about: Create a request to add missing information to devdocs
 ---
 
-## Description (required)
+## Description
 
-<!-- What is the topic missing from devdocs -->
+<!-- (REQUIRED) What is the topic missing from devdocs -->
 
-## Specifics to include (required)
+## Specifics to include
 
-<!-- List specific information or details to include in this topic -->
+<!-- (REQUIRED) List specific information or details to include in this topic -->
 
 [ ] Explanation for ...
 [ ] How to ...
 [ ] Code sample to accomplish ...
 [ ] Other (please specify)
 
-## Additional information/resources (optional)
+## Additional information/resources
 
-<!-- Any information you already know or other online resources that cover this topic -->
+<!-- (OPTIONAL) Any information you already know or other online resources that cover this topic -->
 
 <!--
 Thank you for taking the time to report this issue!
