@@ -8,7 +8,9 @@ module.exports = options => {
     }
 
     let visitor = node => {
-        //console.log(node);
+        if(/bs-callout/.test(node.value)){
+            console.log(node);
+        }
     }
 
     return transformer;

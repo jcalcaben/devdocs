@@ -221,7 +221,7 @@ gulp.task('migrate', () => {
   migrateDirectory({
     mappingFile: './_lib/v2.1-migration-mapping.csv',
     versionDirectory: 'guides/v2.1',
-    subDirectory: 'architecture',
+    subDirectory: 'ui_comp_guide',
     destination: 'src',
     destinationFormat: /\.md|\.svg|\.jpg|\.png|\.ai|\.sketch$/,
     gulp: gulp,
@@ -244,6 +244,29 @@ gulp.task('fix-architecture', () => {
   gulp.src("guides/v2.1/architecture/**/*.md")
     .pipe(replace(/<a href="([^"]*?)"[^>]*?>([^<]*?)<\/a>/g,"[$2]($1)")) //Replace all html links with markdown. Be careful with using this when links are inside tables. 
     .pipe(replace(/<\/([^>]*?)>\n+/g,"</$1>\n")) //Fix multiple empty lines between html end tag and the next line
+    .pipe(gulp.dest( file => {
+    return file.base;
+  }))
+})
+
+/**
+ * This directory needs to convert its callout boxes to markdown
+ */
+gulp.task('fix-comp-mgr', () => {
+  gulp.src("guides/v2.1/comp-mgr/**/*.md")
+//    .pipe(replace(/<a href="([^"]*?)"[^>]*?>([^<]*?)<\/a>/g,"[$2]($1)")) //Replace all html links with markdown. Be careful with using this when links are inside tables. 
+    .pipe(replace(/<\/([^>]*?)>\n+/g,"</$1>\n")) //Fix multiple empty lines between html end tag and the next line
+    .pipe(gulp.dest( file => {
+    return file.base;
+  }))
+})
+
+/**
+ * This directory needs to convert its callout boxes to markdown
+ */
+gulp.task('fix-config-guide', () => {
+  gulp.src("guides/v2.1/config-guide/**/*.md")
+//    .pipe(replace(/<a href="([^"]*?)"[^>]*?>([^<]*?)<\/a>/g,"[$2]($1)")) //Replace all html links with markdown. Be careful with using this when links are inside tables. 
     .pipe(gulp.dest( file => {
     return file.base;
   }))

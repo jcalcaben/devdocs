@@ -21,9 +21,10 @@ module Jekyll
                   else
                     config_version
                   end
-        page.data['baseurl'] = "#{baseurl}#{versionPath}"
+        page.data['baseurl'] = "#{baseurl}/guides/v#{version}"
+        page.data['versionurl'] = "#{baseurl}#{versionPath}"
 
-        page.data['guide_version'] = version
+        page.data['guide_version'] = page.data['version']
       end
 
       videos = site.collections['videos'].docs
