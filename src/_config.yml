@@ -83,8 +83,9 @@ defaults:
       path: ""
     values:
       layout: default
-      guide_version: "2.2"
+      guide_version: "2.1"
       versionPath: ""
+      version: "2.1"
   -
     scope:
       path: "guides/m1x"

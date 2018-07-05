@@ -22,7 +22,7 @@ var jekyllLinks = options => {
       let replacement = mapping.get(source);
       if (replacement) {
         node.url =
-          "{{page.baseurl}}/" +
+          "{{page.versionurl}}/" +
           replacement.replace(/\.md$/, ".html") +
           matches[2];
       }
