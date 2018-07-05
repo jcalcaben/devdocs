@@ -1,22 +1,24 @@
 ---
-name: Topic clarification/correction
-about: Create a request to clarify or correct a documentation topic
+name: New topic
+about: Create a request to add missing information to devdocs
 ---
-## Topic Link (required)
-
-<!-- A link to the topic that needs clarification -->
 
 ## Description (required)
 
-<!-- What needs to be clarified or corrected in this topic -->
+<!-- What is the topic missing from devdocs -->
 
-## Possible solutions (optional)
+## Specifics to include (required)
 
-<!-- What would a solution for this issue look like? -->
+<!-- List specific information or details to include in this topic -->
 
-## Additional information (optional)
+[ ] Explanation for ...
+[ ] How to ...
+[ ] Code sample to accomplish ...
+[ ] Other (please specify)
 
-<!-- What other information can you provide about this issue? -->
+## Additional information/resources (optional)
+
+<!-- Any information you already know or other online resources that cover this topic -->
 
 <!--
 Thank you for taking the time to report this issue!
