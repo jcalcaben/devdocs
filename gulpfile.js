@@ -221,7 +221,7 @@ gulp.task('migrate', () => {
   migrateDirectory({
     mappingFile: './_lib/v2.1-migration-mapping.csv',
     versionDirectory: 'guides/v2.1',
-    subDirectory: 'ui_comp_guide',
+    subDirectory: '',
     destination: 'src',
     destinationFormat: /\.md|\.svg|\.jpg|\.png|\.ai|\.sketch$/,
     gulp: gulp,
