@@ -9,7 +9,7 @@ module.exports = options => {
 
     let visitor = node => {
         if(/bs-callout/.test(node.value)){
-            console.log(node);
+            //console.log(node);
         }
     }
 
