@@ -271,3 +271,7 @@ gulp.task('fix-config-guide', () => {
     return file.base;
   }))
 })
+
+gulp.task('update-toc', () => {
+  let yaml = require('js-yaml');
+})
