@@ -219,7 +219,7 @@ gulp.task('migrate', () => {
   gulp.src("404.md").pipe(gulp.dest('src'))
 
   migrateDirectory({
-    mappingFile: './_lib/v2.1-migration-mapping.csv',
+    mappingFile: './_lib/migration-mapping.csv',
     versionDirectory: 'guides/v2.1',
     subDirectory: '',
     destination: 'src',

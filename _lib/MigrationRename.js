@@ -16,6 +16,9 @@ var path = require("path");
  */
 module.exports = (map, baseDir, destinationFormat) => {
   return rename(file => {
+
+    baseDir = baseDir.replace(/guides\/v2\..\//,'');
+
     let filename =
       baseDir + "/" + file.dirname + "/" + file.basename + file.extname;
 
