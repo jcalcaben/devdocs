@@ -17,13 +17,13 @@ var path = require("path");
 module.exports = (map, baseDir, destinationFormat) => {
   return rename(file => {
 
-    baseDir = baseDir.replace(/guides\/v2\..\//,'');
-
     let filename =
       baseDir + "/" + file.dirname + "/" + file.basename + file.extname;
 
     if (file.dirname === ".")
       filename = baseDir + "/" + file.basename + file.extname;
+
+    filename = filename.replace(/guides\/v2\..\/?/,'');
 
     if (map.has(filename)) {
       let destination = map.get(filename);
