@@ -284,7 +284,6 @@ gulp.task('update-toc', () => {
     gulp.src("src/_data/toc/*.yml")
       .pipe(UpdateToc(map))
       .pipe(gulp.dest(file => {
-        console.log(file.contents.toString());
         return file.base;
       }))
 
