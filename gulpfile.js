@@ -272,6 +272,22 @@ gulp.task('fix-config-guide', () => {
   }))
 })
 
+/**
+ * Update the TOC files with the new mapping
+ */
 gulp.task('update-toc', () => {
-  let yaml = require('js-yaml');
+  let MapGenerator = require('./_lib/MapGenerator');
+
+  MapGenerator('_lib/migration-mapping.csv',(map)=>{
+    let UpdateToc = require('./_lib/UpdateToc');
+
+    gulp.src("src/_data/toc/*.yml")
+      .pipe(UpdateToc(map))
+      .pipe(gulp.dest(file => {
+        console.log(file.contents.toString());
+        return file.base;
+      }))
+
+  });
+
 })

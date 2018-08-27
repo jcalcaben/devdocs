@@ -1,0 +1,18 @@
+label: Sample YAML data
+pages:
+
+    - label: Page 1
+      url: /pages/page-one.html
+
+    - label: Page 2
+      url: /pages/page-two.html
+      children:
+
+        - label: Page 2.1
+          url: /pages/page-two/page-one.html
+
+        - label: Page 2.2
+          url: /pages/page-two/page-two.html
+
+    - label: Page 3
+      url: /pages/page-three.html
