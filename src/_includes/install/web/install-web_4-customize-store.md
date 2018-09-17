@@ -1,14 +1,5 @@
 ## Step 4: Customize Your Store   {#instgde-install-magento-web-step4}
 
-<<<<<<< HEAD
-=======
-<!-- 1.	To install optional sample data, select the **Use Sample Data** checkbox.
-
-	<div class="bs-callout bs-callout-info" id="info">
-  	<p>If the <strong>Use Sample Data</strong> checkbox is not available, see <a href="{{page.baseurl}}/install-gde/install/sample-data.html">Enable optional Magento sample data</a>.</p>
-	</div> -->
-
->>>>>>> Fix image links and link format in _include files
 1.	From the **Store Default Time Zone** list, click the name of your store's time zone.
 
 2.	From the **Store Default Currency** list, click the default currency to use in your store.
@@ -17,11 +8,7 @@
 
 3.	Expand **Advanced Modules Configuration** to optionally enable or disable modules before you install the Magento software.
 
-<<<<<<< HEAD
 	Before you enable or disable modules, review the information discussed in [Enabling and disabling modules]({{ page.baseurl }}/install-gde/install/web/install-web.html#instgde-install-web-enable-mod).
-=======
-	Before you enable or disable modules, review the information discussed in <a href="{{page.baseurl}}/install-gde/install/web/install-web.html#instgde-install-web-enable-mod">Enabling and disabling modules</a>.
->>>>>>> Fix image links and link format in _include files
 
 	See one of the following sections for more information about enabling and disabling modules:
 
@@ -55,24 +42,12 @@ The following figure shows an example of disabling the `Magento_GoogleAnalytics`
 A dependency error occurs when two inter-dependent modules are disabled at the same time.
 
 If there is a dependency error, a message similar to the following displays.
-<<<<<<< HEAD
 ![]({{ site.baseurl }}/common/images/install_skip-depend-check.png)
-=======
-<img src="{{site.baseurl}}/static/images/install_skip-depend-check.png">
->>>>>>> Fix image links and link format in _include files
 
 Click **Show details** to display details about the dependency error. You can then do any of the following:
 
 *	Select the **Skip dependency check for individual modules** to ignore the issue and continue with your installation. (Additional dependency checks are performed after you click **Next**.)
 *	Resolve the issue by taking the action indicated by the message.
-<<<<<<< HEAD
-=======
-		
-<div class="bs-callout bs-callout-warning">
-	<p>Use <strong>Skip dependency check for individual modules</strong> with caution. We recommend against it because a typical reason for this error is you manually edited the <a href="{{page.baseurl}}/config-guide/config/config-php.html">deployment configuration</a>. Editing the deployment configuration is not recommended because future Magento software updates can undo your changes.</p>
-</div>
-
->>>>>>> Fix image links and link format in _include files
 
 {:.bs-callout .bs-callout-warning}
 Use <strong>Skip dependency check for individual modules</strong> with caution. We recommend against it because a typical reason for this error is you manually edited the [deployment configuration]({{ page.baseurl }}/config-guide/config/config-php.html). Editing the deployment configuration is not recommended because future Magento software updates can undo your changes.
