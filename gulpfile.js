@@ -194,6 +194,7 @@ gulp.task('default',
 */
 //gulp.task('dev', ['jekyll', 'watch']);
 
+
 /**
  * A gulp task for the directory structure migration
  */
@@ -272,21 +273,11 @@ gulp.task('fix-config-guide', () => {
   }))
 })
 
-/**
- * Update the TOC files with the new mapping
- */
-gulp.task('update-toc', () => {
-  let MapGenerator = require('./_lib/MapGenerator');
+require('devdocs-utils')(gulp, {
+  mappingFile: './_lib/migration-mapping.csv',
+  versionDirectory: 'guides/v2.3',
+  subDirectory: '',
+  rootDirectory: __dirname
+});
 
-  MapGenerator('_lib/migration-mapping.csv',(map)=>{
-    let UpdateToc = require('./_lib/UpdateToc');
-
-    gulp.src("src/_data/toc/*.yml")
-      .pipe(UpdateToc(map))
-      .pipe(gulp.dest(file => {
-        return file.base;
-      }))
-
-  });
-
-})
+require('jekyll-tasks')(gulp);

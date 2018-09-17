@@ -14,6 +14,7 @@ module Jekyll
       pattern = %r{guides\/v(\d\.\d)}
       pages = site.pages
       baseurl = site.baseurl
+      config_version = site.config['version']
       pages.each do |page|
         matcher = pattern.match(page.path)
         versionPath = page.data['versionPath']
@@ -22,10 +23,10 @@ module Jekyll
                   else
                     config_version
                   end
-        page.data['baseurl'] = "#{baseurl}/guides/v#{version}"
-        page.data['versionurl'] = "#{baseurl}#{versionPath}"
+        #page.data['baseurl'] = "#{baseurl}/guides/v#{version}"
+        #page.data['versionurl'] = "#{baseurl}#{versionPath}"
 
-        page.data['guide_version'] = page.data['version']
+        #page.data['guide_version'] = page.data['version']
       end
     end
   end
