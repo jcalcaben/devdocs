@@ -1,0 +1,30 @@
+label: Getting Started with Web APIs
+pages:
+  - label: Introduction
+    url: /get-started/get-started.html
+  - label: Use REST APIs
+    url: /get-started/rest.html
+    children:
+      - label: Construct a request
+        url: /get-started/rest/construct-request.html
+      - label: Use cURL to run the request
+        url: /get-started/rest/use-curl.html
+      - label: Status codes and responses
+        url: /get-started/rest/response-status-codes.html
+  - label: Use SOAP Services
+    url: /get-started/soap.html
+  - label: Authentication
+    url: /get-started/authentication.html
+    children:
+      - label: Token-based authentication
+        url: /get-started/authentication/token.html
+      - label: OAuth-based authentication
+        url: /get-started/authentication/oauth.html
+      - label: OAuth error codes
+        url: /get-started/authentication/oauth-error-codes.html
+      - label: Session-based authentication
+        url: /get-started/authentication/session.html
+  - label: Create an integration
+    url: /get-started/create-integration.html
+  - label: Web API functional testing
+    url: /get-started/web-api-functional-testing.html

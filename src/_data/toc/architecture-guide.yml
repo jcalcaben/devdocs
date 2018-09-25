@@ -1,0 +1,61 @@
+label: Architecture Guide
+pages:
+  - label: Introduction
+    url: /architecture.html
+  - label: Architectural basics
+    url: /architecture/basics.html
+    children:
+      - label: Extensibility and modularity
+        url: /architecture/basics/extensibility.html
+      - label: Ease of frontend customization
+        url: /architecture/basics/frontend-customization.html
+      - label: Global features that support extensibility
+        url: /architecture/basics/global-extensibility-features.html
+      - label: Security
+        url: /architecture/basics/security.html
+      - label: Storefront customization strategies
+        url: /architecture/basics/storefront-customization.html
+      - label: Architectural diagrams
+        url: /architecture/basics/architectural-diagrams.html
+      - label: Technology stack
+        url: /architecture/basics/technology-stack.html
+  - label: Architectural layers
+    url: /architecture/layers.html
+    children:
+      - label: Presentation layer
+        url: /architecture/layers/presentation.html
+      - label: Service layer
+        url: /architecture/layers/service.html
+      - label: Domain layer
+        url: /architecture/layers/domain.html
+      - label: Persistence layer
+        url: /architecture/layers/persistence.html
+  - label: Components
+    url: /architecture/components.html
+    children:
+      - label: Module overview
+        url: /architecture/components/modules.html
+      - label: Modules and areas
+        url: /architecture/components/modules/areas.html
+      - label: Module conventions
+        url: /architecture/components/modules/conventions.html
+      - label: Module relationships
+        url: /architecture/components/modules/relationships.html
+      - label: Module dependencies
+        url: /architecture/components/modules/dependencies.html
+      - label: Module dependency types
+        url: /architecture/components/modules/dependency-types.html
+  - label: Magento Framework
+    url: /architecture/logical-view/framework.html
+  - label: Third-party libraries
+    url: /architecture/logical-view/third-party-libraries.html
+  - label: GDPR compliance
+    include_versions:
+      - '2.1'
+      - '2.2'
+      - '2.3'
+    children:
+      - label: Magento 2.x
+        url: /architecture/gdpr/magento-2x.html
+      - label: Magento 1.x
+        url: /architecture/gdpr/magento-1x.html

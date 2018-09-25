@@ -1,0 +1,79 @@
+label: Functional Testing Framework Guide
+pages:
+  - label: Introduction
+    url: /testing/functional-testing-framework/introduction.html
+  - label: Installation
+    url: /testing/functional-testing-framework/installation.html
+  - label: Quick Start
+    url: /testing/functional-testing-framework/quick-start.html
+    children:
+      - label: Adjust configuration
+        url: >-
+          /testing/functional-testing-framework/quick-start/configuration-setting.html
+      - label: Prepare Magento application
+        url: /testing/functional-testing-framework/quick-start/magento-setting.html
+      - label: Prepare environment for test run
+        url: >-
+          /testing/functional-testing-framework/quick-start/environment-setting.html
+      - label: Test run
+        url: /testing/functional-testing-framework/quick-start/test-run.html
+      - label: See logs for failed tests
+        url: /testing/functional-testing-framework/quick-start/logs.html
+  - label: Create a Test
+    url: /testing/testing/functional-testing-framework/test-creation.html
+    children:
+      - label: Out-of-the-box test
+        url: >-
+          /testing/testing/functional-testing-framework/test-creation/out-of-the-box.html
+      - label: New functional test. Theory
+        url: >-
+          /testing/testing/functional-testing-framework/test-creation/custom-general.html
+      - label: New functional test. Practice
+        url: >-
+          /testing/testing/functional-testing-framework/test-creation/custom-tutorial.html
+  - label: Features
+    url: /testing/functional-testing-framework/features.html
+    children:
+      - label: Isolation management
+        url: /testing/functional-testing-framework/features/isolation.html
+      - label: Modularity
+        url: /testing/functional-testing-framework/features/modularity.html
+      - label: Parallel execution flow
+        url: /testing/functional-testing-framework/features/parallel-execution.html
+      - label: Reporting
+        url: /testing/functional-testing-framework/features/reporting.html
+      - label: Test suite
+        url: /testing/functional-testing-framework/features/test-suite.html
+      - label: Web driver replacement
+        url: /testing/functional-testing-framework/features/webdriver.html
+  - label: Entities
+    url: /testing/functional-testing-framework/entities.html
+    children:
+      - label: Fixture
+        url: /testing/functional-testing-framework/entities/fixture.html
+      - label: Fixture Repository
+        url: /testing/functional-testing-framework/entities/fixture-repository.html
+      - label: Handler
+        url: /testing/functional-testing-framework/entities/handler.html
+      - label: Block
+        url: /testing/functional-testing-framework/entities/block.html
+      - label: Typified element
+        url: /testing/functional-testing-framework/entities/typified-element.html
+      - label: Page
+        url: /testing/functional-testing-framework/entities/page.html
+      - label: Constraint
+        url: /testing/functional-testing-framework/entities/constraint.html
+      - label: Data set
+        url: /testing/functional-testing-framework/entities/data-set.html
+      - label: Test case
+        url: /testing/functional-testing-framework/entities/test-case.html
+      - label: Scenario test
+        url: /testing/functional-testing-framework/entities/scenario-test.html
+  - label: Configuration
+    url: /testing/testing/functional-testing-framework/configuration.html
+  - label: Update
+    url: /testing/functional-testing-framework/update.html
+  - label: Troubleshooting
+    url: /testing/functional-testing-framework/troubleshooting.html
+  - label: Changelog
+    url: /testing/functional-testing-framework/changelog.html

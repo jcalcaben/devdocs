@@ -28,6 +28,7 @@
     "gulp-install": "latest",
     "gulp-ruby-sass": "latest",
     "highlight.js": "latest",
+    "jekyll-tasks": "^1.2.1",
     "node-sass": "latest"
   },
   "private": true

@@ -1,0 +1,129 @@
+label: Frontend Developer Guide
+pages:
+  - label: Introduction
+    url: /frontend-development.html
+  - label: Conventional notations used in this Guide
+    url: /frontend-development/conventions.html
+  - label: Magento cache overview
+    url: /frontend-development/cache.html
+  - label: Theme development best practices
+    url: /frontend-development/themes/best-practice.html
+  - label: Themes
+    url: /Delete
+    children:
+      - label: Themes overview
+        url: /frontend-development/themes.html
+      - label: Install a third-party storefront theme
+        url: /frontend-development/themes/install-theme.html
+      - label: Uninstall a storefront theme
+        url: /frontend-development/themes/uninstall-theme.html
+      - label: Create an Admin theme
+        url: /frontend-development/themes/admin-create-theme.html
+      - label: Apply an Admin theme
+        url: /frontend-development/themes/admin-apply-theme.html
+      - label: Create a new storefront theme
+        url: /frontend-development/themes/create-theme.html
+      - label: Apply and configure a storefront theme
+        url: /frontend-development/themes/apply-theme.html
+      - label: 'Locate templates, layouts, and styles'
+        url: /frontend-development/themes/debug-theme.html
+      - label: Magento theme structure
+        url: /frontend-development/themes/structure.html
+      - label: Theme inheritance
+        url: /frontend-development/themes/set-inheritance.html
+      - label: Adding custom favicons
+        url: /frontend-development/themes/add-favicons.html
+      - label: Configure images properties for a theme
+        url: /frontend-development/themes/configure-images.html
+      - label: Configure product video
+        url: /frontend-development/themes/configure-video.html
+      - label: JavaScript Bundling
+        url: /frontend-development/themes/js-bundling.html
+  - label: Layout
+    url: /frontend-development/layouts.html
+    children:
+      - label: Layout instructions
+        url: /frontend-development/layouts/xml-instructions.html
+      - label: Layout file types
+        url: /frontend-development/layouts/file-types.html
+      - label: Extend a layout
+        url: /frontend-development/layouts/extend.html
+      - label: Override a layout
+        url: /frontend-development/layouts/override.html
+      - label: Common layout customization tasks
+        url: /frontend-development/layouts/common-customization-tasks.html
+      - label: Customizing layout illustration
+        url: /frontend-development/layouts/sample-customization.html
+  - label: Templates
+    url: /frontend-development/templates.html
+    children:
+      - label: Templates customization walkthrough
+        url: /frontend-development/templates/customization-walkthrough.html
+      - label: Templates basic concepts
+        url: /frontend-development/templates/override.html
+      - label: Illustration of customizing templates
+        url: /frontend-development/templates/sample-customization.html
+      - label: Customize email templates
+        url: /frontend-development/templates/email.html
+      - label: Templates XSS security
+        url: /frontend-development/templates/security.html
+  - label: Cascading style sheets (CSS)
+    url: /frontend-development/css.html
+    children:
+      - label: Include CSS
+        url: /frontend-development/css/include-css.html
+      - label: CSS and LESS preprocessing
+        url: /frontend-development/css/preprocess.html
+      - label: Compile LESS using Grunt
+        url: /frontend-development/css/debug.html
+      - label: Magento UI library
+        url: /frontend-development/css/ui-library.html
+      - label: Using jQuery UI styles
+        url: /frontend-development/css/jquery.html
+      - label: Customizing styles illustration
+        url: /frontend-development/css/illustration.html
+      - label: Using custom fonts
+        url: /frontend-development/css/custom-fonts.html
+      - label: Using custom CSS preprocessor
+        children:
+          - label: Add custom CSS preprocessor
+            url: /frontend-development/css/custom-preprocess.html
+          - label: Use Sass preprocessor and Gulp task runner
+            url: /frontend-development/css/gulp-sass.html
+  - label: Quick start guide to styles
+    url: /frontend-development/css-quickstart.html
+    children:
+      - label: Simple ways to customize a theme's styles
+        url: /frontend-development/css-quickstart/customize.html
+      - label: Simple style changes with client-side LESS compilation vs. server-side
+        url: /frontend-development/css-quickstart/modes.html
+  - label: How to Make Your Theme Responsive and Mobile
+    url: /frontend-development/responsive-web-design.html
+    children:
+      - label: CSS in responsive design
+        url: /frontend-development/responsive-web-design/css.html
+      - label: JavaScript in Magento responsive design
+        url: /frontend-development/responsive-web-design/js.html
+      - label: Create a responsive mobile theme based on a default theme
+        url: /frontend-development/responsive-web-design/mobile.html
+      - label: Customizing RWD illustration
+        url: /frontend-development/responsive-web-design/sample-customization.html
+      - label: Add a custom breakpoint
+        url: /frontend-development/responsive-web-design/custom-break-point.html
+  - label: Translations
+    url: /frontend-development/translations.html
+    children:
+      - label: Use translation dictionary to customize strings
+        url: /frontend-development/translations/use-dictionary.html
+      - label: Translate theme strings
+        url: /frontend-development/translations/translate-theme-strings.html
+      - label: 'Create a translation dictionary for a theme, illustration'
+        url: /frontend-development/translations/create-dictionary.html
+  - label: Tools
+    include_versions:
+      - '2.2'
+      - '2.3'
+    url: /frontend-development/tools.html
+    children:
+      - label: Using Grunt for Magento tasks
+        url: /frontend-development/tools/using-grunt.html

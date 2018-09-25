@@ -1,0 +1,165 @@
+- label: Cloud
+  children:
+    - label: Cloud Guide
+      url: /cloud/basic-information/magento-commerce-cloud.html
+    - label: Cloud Architecture
+      url: /cloud/architecture/cloud-architecture.html
+    - label: Configure Environments
+      url: /cloud/env/environment-intro.html
+    - label: Upgrades and Patches
+      url: /cloud/project/project-upgrade-parent.html
+    - label: ece-tools Release Notes
+      url: /cloud/release-notes/cloud-tools.html
+      exclude_versions:
+        - '2.0'
+- label: Setup
+  children:
+    - label: Installation Guide
+      url: /install/getting-started.html
+    - label: Extension Update and System Upgrade Guide
+      url: /system-update-upgrade.html
+      exclude_versions:
+        - '2.0'
+        - '2.1'
+    - label: Component Manager and System Upgrade Guide
+      url: /system-update-upgrade.html
+      include_versions:
+        - '2.0'
+        - '2.1'
+    - label: Configuration Guide
+      url: /configure.html
+    - label: Performance Best Practices
+      url: /performance-best-practices/introduction.html
+      exclude_versions:
+        - '2.0'
+        - '2.1'
+    - label: Migration Guide
+      url: /migration.html
+    - label: Magento Commerce (Cloud) Guide
+      url: /cloud/basic-information/magento-commerce-cloud.html
+    - label: Release Information
+      url: /magento-release-information.html
+      versionless: true
+- label: Development
+  children:
+    - label: Backend
+      children:
+        - label: Architecture
+          url: /architecture.html
+        - label: PHP Developer Guide
+          url: /extension-development.html
+        - label: Extension Developer Best Practices
+          url: /extension-development/best-practices.html
+        - label: Module Reference Guide
+          url: /module-reference.html
+        - label: Coding Standards
+          url: /coding-standards.html
+        - label: Contributor Guide
+          url: /contribute/code.html
+    - label: Frontend
+      children:
+        - label: Frontend Developer Guide
+          url: /frontend-development.html
+        - label: UI Components
+          url: /ui-components.html
+          include_versions:
+            - '2.0'
+        - label: UI Components Guide
+          url: /ui-components.html
+          exclude_versions:
+            - '2.0'
+        - label: JavaScript Developer Guide
+          url: /javascript-development.html
+        - label: Admin Design Pattern Library
+          url: /pattern-library.html
+        - label: Admin Style Guide
+          url: /design-style.html
+        - label: Magento PWA Documentation Site
+          url: 'https://magento-research.github.io/pwa-studio/'
+          include_versions:
+            - '2.3'
+    - label: API
+      children:
+        - label: Get Started with Magento Web APIs
+          url: /get-started/get-started.html
+        - label: REST API Reference
+          url: /rest/rest.html
+        - label: SOAP API Reference
+          url: /soap.html
+        - label: GraphQL Developer Guide
+          url: /graphql/graphql.html
+          include_versions:
+            - '2.3'
+        - label: Marketplace EQP API Reference
+          url: /marketplace/eqp/api.html
+          exclude_versions:
+            - '2.0'
+        - label: Magento BI Import REST API
+          url: 'https://developers.rjmetrics.com/'
+          exclude_versions:
+            - '2.0'
+- label: Testing
+  children:
+    - label: Magento Testing Guide
+      url: /testing.html
+    - label: Functional Acceptance Testing
+      url: /mftf/2.2/introduction.html
+      include_versions:
+        - '2.2'
+      versionless: true
+    - label: Functional Acceptance Testing
+      url: /mftf/2.3/introduction.html
+      include_versions:
+        - '2.3'
+      versionless: true
+    - label: Functional Testing
+      url: /testing/functional-testing-framework/introduction.html
+    - label: Integration Testing
+      url: /integration-testing/test-run.html
+    - label: JavaScript Unit Testing
+      url: /testing/javascript/jasmine.html
+    - label: PHP Unit Testing
+      url: /testing/unit/test-run.html
+    - label: Web API Functional Testing
+      url: /get-started/web-api-functional-testing.html
+- {}
+- label: Functional Areas
+  children:
+    - label: Advanced Reporting
+      url: /advanced-reporting/index.html
+      exclude_versions:
+        - '2.0'
+        - '2.1'
+    - label: B2B
+      url: /b2b/b2b.html
+      exclude_versions:
+        - '2.0'
+        - '2.1'
+    - label: Checkout
+      url: /ui-components/checkout-tutorial.html
+    - label: Order Management
+      url: 'http://omsdocs.magento.com/en/'
+    - label: Payment Integrations
+      url: /payment-integration.html
+    - label: Staging
+      url: /extension-development/core-concepts/staging.html
+      exclude_versions:
+        - '2.0'
+- label: Tutorials
+  children:
+    - label: Rest Tutorials
+      url: /rest/tutorials/index.html
+      exclude_versions:
+        - '2.0'
+    - label: Customize Product Creation Form
+      url: /ui-components/howto/customize-product-creation-form.html
+      exclude_versions:
+        - '2.0'
+    - label: Customize Checkout
+      url: /ui-components/checkout-tutorial.html
+    - label: Magento Support
+      url: /community/resources/support.html
+      versionless: true
+    - label: Video Tutorials
+      url: /videos/
+      versionless: true

@@ -1,0 +1,26 @@
+label: Testing
+pages:
+  - label: Introduction
+    url: /testing.html
+  - label: Integration Tests
+    children:
+      - label: Running Integration Tests
+        url: /integration-testing/test-run.html
+      - label: Using DocBlock annotations
+        url: /test/integration/annotations.html
+  - label: JavaScript Unit Testing
+    children:
+      - label: Jasmine
+        url: /testing/javascript/jasmine.html
+      - label: JsTestDriver
+        url: /testing/javascript/jsunit.html
+  - label: PHP Unit Testing
+    children:
+      - label: Running Unit Tests
+        url: /testing/unit/test-run.html
+      - label: Running Unit Tests in CLI
+        url: /testing/unit/cli.html
+      - label: Running Unit Tests in PHPStorm
+        url: /testing/unit/phpstorm.html
+      - label: Writing Testable Code
+        url: /testing/unit/testable-code.html

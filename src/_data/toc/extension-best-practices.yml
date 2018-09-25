@@ -1,0 +1,45 @@
+label: Extension Best Practices
+pages:
+  - label: Introduction
+    url: /extension-development/best-practices.html
+  - label: Admin
+    url: /extension-development/best-practices/admin.html
+    children:
+      - label: Admin Panel Placement and Design
+        url: /extension-development/best-practices/admin/placement-design.html
+      - label: Admin FAQ
+        url: /extension-development/best-practices/admin/faq.html
+  - label: Extension Coding
+    url: /extension-development/best-practices/coding.html
+    children:
+      - label: Programming best practices
+        url: /extension-development/best-practices.html
+      - label: Working with the Architecture
+        url: /extension-development/core-concepts/working-with-architecture.html
+      - label: 'Security, performance, and data handling'
+        url: /extension-development/best-practices/security-performance-data.html
+      - label: Observers best practices
+        url: /extension-development/class-types/observer/best-practices.html
+      - label: Coding FAQ
+        url: /extension-development/best-practices/coding/faq.html
+      - label: Creating a Magento admin page
+        url: /extension-development/tutorials/create-admin-page.html
+  - label: Storefront
+    url: /extension-development/best-practices/storefront.html
+  - label: Security
+    children:
+      - label: Writing secure code
+        url: /extension-development/security.html
+  - label: Tutorials
+    children:
+      - label: Copying fieldsets
+        url: /extension-development/tutorials/copy-fieldsets.html
+      - label: Serialized to JSON data upgrade
+        include_versions:
+          - '2.2'
+          - '2.3'
+        url: /extension-development/tutorials/serialized-json-data-upgrade.html
+      - label: Modify Image Library folder permissions
+        include_versions:
+          - '2.3'
+        url: /extension-development/tutorials/modify-image-library-permissions.html

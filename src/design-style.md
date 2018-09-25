@@ -1,0 +1,43 @@
+---
+group: admin-style-guide
+title: Admin Style Guide
+landing-page: Admin Style Guide
+redirect_from: /guides/v2.3/design-styleguide/bk-styleguide.html
+---
+
+The Magento Admin guide sets our foundational design, writing, and content standards for the {% glossarytooltip 18b930cf-09cc-47c9-a5e5-905f86c43f81 %}Magento Admin{% endglossarytooltip %} software. For more specific user-interface standards, see the [Admin Design Pattern Library]({{page.baseurl}}/pattern-library.html).
+
+**Why follow the style guide?** A style guide is the best tool for designers and writers to establish and maintain consistency, which improves communication throughout the application. A seamless look-and-feel and a steady, encouraging writing style make the application usable and engaging.
+
+**To get started or refresh your knowledge,** read the following documents:
+
+## Design
+
+* **[Color]({{page.baseurl}}/design-style/color.html)** — Reflects our brand personality, meeting accessibility standards.
+
+* **[Iconography]({{page.baseurl}}/design-style/iconography.html)** — Provides a visual representation of functionality or content, usually paired and displayed with a label.
+
+* **[Page Grid]({{page.baseurl}}/design-style/pagegrid.html)** — Establishes global layouts for page templates and how content and design patterns can be placed in the grids' columns.
+
+* **[Typography]({{page.baseurl}}/design-style/typography.html)** — Sets page hierarchy and content type specifications.
+
+## Writing and Content
+
+* **[Voice and Tone]({{page.baseurl}}/design-style/content-voice-tone.html)** — Outlines a set of ground rules to engage and empower users as they navigate the Magento Admin and perform tasks with confidence and ease.
+
+* **[Errors and Messages Writing]({{page.baseurl}}/design-style/errors-and-messages.html)** — Establishes how to communicate with users when errors occur or important information needs to be communicated.
+
+* **[Buttons and Links Usage]({{page.baseurl}}/design-style/buttons-links-usage.html)** — Defines the differences between buttons and links and when they can be used as calls to action.
+
+* **[Capitalization]({{page.baseurl}}/design-style/capitalization.html)** — Provides guidance for how we use sentence case, title case, and all caps.
+
+* **[Headings and Organization]({{page.baseurl}}/design-style/headings-and-organization.html)** — Prioritizes content and creates a hierarchy for users to easily navigate Magento Admin.
+
+* **[Content Formats]({{page.baseurl}}/design-style/content-formats.html)** — Standardizes abbreviations, acronyms, file-type formats, addresses, and lists.
+
+* **[Number Formats]({{page.baseurl}}/design-style/number-formats.html)** — Lists basic numeric and heading standards and covers percentages, money, and dates and times.
+
+## Related Links
+
+[Admin Design Pattern Library]({{page.baseurl}}/pattern-library.html)
+

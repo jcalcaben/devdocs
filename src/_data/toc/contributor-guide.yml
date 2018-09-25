@@ -1,0 +1,30 @@
+label: Contribution Guide
+pages:
+  - label: Code Contributions
+    url: /contribute/code.html
+    children:
+      - label: Magento Definition of Done
+        url: /contribute/definition-of-done.html
+      - label: Backward compatible development
+        url: /contribute/code/backward-compatible.html
+  - label: DevDocs Contributions
+    children:
+      - label: Contribution Guidelines
+        url: 'https://github.com/magento/devdocs/blob/master/.github/CONTRIBUTING.md'
+      - label: Suggested topics for contribution
+        url: /contribute/documentation/suggested-topics.html
+      - label: Templates
+        children:
+          - label: Basic template
+            url: /contribute/documentation/templates/basic.html
+          - label: Sample template tutorial
+            class: tutorial
+            url: /contribute/documentation/templates/tutorial/first.html
+  - label: Contributors
+    url: /contributor-guide/contributors.html
+  - label: Maintainers
+    url: /contributor-guide/maintainers.html
+    include_versions:
+      - '2.1'
+      - '2.2'
+      - '2.3'
