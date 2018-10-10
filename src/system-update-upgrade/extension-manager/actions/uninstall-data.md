@@ -1,0 +1,34 @@
+---
+group: software-update-guide
+title: Step 3. Data Option
+level3_menu_node: level3child
+functional_areas:
+  - Upgrade
+redirect_from: /guides/v2.3/comp-mgr/extens-man/extensman-uninst-data.html
+---
+
+## Step 3. Data Option
+
+This step displays if you're uninstalling extensions.
+
+After backing up, you have the choice of removing data from the Magento 2 database.
+
+If the {% glossarytooltip 55774db9-bf9d-40f3-83db-b10cc5ae3b68 %}extension{% endglossarytooltip %} has no data to remove, the following message displays. (If a extension has data but no uninstall script, the same prompt displays. In that case, contact the vendor or remove database data manually.)
+
+```
+The selected extension has no data to remove.
+```
+
+If the extension has data to remove, a page similar to the following displays.
+
+      <img src="{{site.baseurl}}/static/images/cman_uninstall-data.png" width="600px" alt="You can optionally remove database data">
+
+Click one of the following:
+
+* **Keep data**: Click to keep the data in the database.
+* **Remove data**: Click to remove data from the database. 
+
+  You can click **Back** to back up the database first if you did not do so already.
+
+Continue with [Step 4. Uninstall]({{page.baseurl}}/system-update-upgrade/extension-manager/actions/uninstall.html)
+

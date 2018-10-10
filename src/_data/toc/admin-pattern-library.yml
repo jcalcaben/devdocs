@@ -1,0 +1,92 @@
+label: Admin Pattern Library
+pages:
+  - label: Introduction
+    url: /pattern-library.html
+  - label: Container
+    children:
+      - label: Static Content Container
+        url: /pattern-library/containers/static-content.html
+      - label: 'Slide-out, Modals, and Overlays'
+        url: /pattern-library/containers/slideouts-modals-overlays.html
+      - label: Tabs
+        url: /pattern-library/containers/tabs.html
+  - label: Controls
+    children:
+      - label: Buttons
+        url: /pattern-library/controls/buttons.html
+      - label: Button Bar
+        url: /pattern-library/controls/button-bar.html
+      - label: Expandable Sections
+        include_versions:
+          - '2.1'
+          - '2.2'
+          - '2.3'
+        url: /pattern-library/controls/expand-collapse.html
+      - label: View Controller
+        include_versions:
+          - '2.1'
+          - '2.2'
+          - '2.3'
+        url: /pattern-library/controls/viewcontroller.html
+  - label: Displaying and Dealing with Data
+    children:
+      - label: Filters
+        url: /pattern-library/data-display/data-table/filter.html
+      - label: Tile
+        url: /pattern-library/data-display/tile.html
+      - label: Data Table
+        url: /pattern-library/data-display/data-table.html
+      - label: Tree
+        url: /pattern-library/data-display/tree.html
+  - label: Feedback to User
+    children:
+      - label: Progress Indicator
+        url: /pattern-library/user-feedback/progress-indicator.html
+  - label: General
+    children:
+      - label: Accessibility Guideline
+        url: /pattern-library/general/accessibility-guidelines.html
+  - label: Getting User Input
+    children:
+      - label: Form Elements
+        url: /pattern-library/user-input/form-elements.html
+      - label: Image Uploader
+        url: /pattern-library/user-input/image-uploader.html
+      - label: Date and Time Selector
+        url: /pattern-library/user-input/date-time-selector.html
+      - label: Row Pattern (Table)
+        url: /pattern-library/user-input/row-pattern.html
+      - label: Use Default Config
+        url: /pattern-library/user-input/default-configuration.html
+      - label: Select From List
+        url: /pattern-library/user-input/select-list.html
+  - label: Graphics
+    include_versions:
+      - '2.1'
+      - '2.2'
+      - '2.3'
+    children:
+      - label: Iconography
+        url: /pattern-library/graphics/iconography.html
+  - label: Navigation
+    children:
+      - label: Links
+        url: /pattern-library/navigation/links.html
+      - label: Wizard
+        url: /pattern-library/navigation/wizard.html
+  - label: Staging Patterns
+    include_versions:
+      - '2.1'
+      - '2.2'
+      - '2.3'
+    children:
+      - label: Timeline Dashboard
+        url: /pattern-library/staging/timeline-dashboard.html
+      - label: Scheduled Changes Module
+        url: /pattern-library/staging/scheduled-changes.html
+  - label: Templates
+    children:
+      - label: Address Form
+        url: /pattern-library/templates/address-form.html
+      - label: Sign In Form
+        url: /pattern-library/templates/sign-in-form.html

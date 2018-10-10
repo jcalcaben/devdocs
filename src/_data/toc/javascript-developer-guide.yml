@@ -1,0 +1,66 @@
+label: JavaScript Developer Guide
+pages:
+  - label: Introduction
+    url: /javascript-development.html
+  - label: Conventional notations used in this Guide
+    url: /javascript-development/notation-conventions.html
+  - label: JavaScript
+    url: /javascript-development/core-concepts.html
+    children:
+      - label: JavaScript resources in Magento
+        url: /javascript-development/core-concepts/resources.html
+      - label: About AMD modules and RequireJS
+        include_versions:
+          - '2.0'
+          - '2.1'
+        url: /javascript-development/core-concepts/requirejs.html
+      - label: Calling and initializing JavaScript
+        url: /javascript-development/core-concepts/script-initialize-call.html
+      - label: Frontend product repository
+        include_versions:
+          - '2.2'
+          - '2.3'
+        url: /javascript-dev-guide/javascript/product-frontend-storage.html
+      - label: Use custom JavaScript
+        url: /javascript-development/core-concepts/custom-code.html
+      - label: Locate JavaScript components
+        url: /javascript-development/core-concepts/locate-components.html
+      - label: Customizing JavaScript illustration
+        url: /javascript-development/tutorial/widget-customization.html
+      - label: Using JavaScript mixins
+        url: /javascript-development/core-concepts/mixins.html
+  - label: Magento jQuery widgets
+    url: /javascript-development/jquery-widget.html
+    children:
+      - label: Accordion widget
+        url: /javascript-development/jquery-widget/accordion.html
+      - label: Alert widget
+        url: /javascript-development/jquery-widget/alert.html
+      - label: Calendar widget
+        url: /javascript-development/jquery-widget/calendar.html
+      - label: Collapsible widget
+        url: /javascript-development/jquery-widget/collapsible.html
+      - label: Confirmation widget
+        url: /javascript-development/jquery-widget/confirm.html
+      - label: DropdownDialog widget
+        url: /javascript-development/jquery-widget/dialog.html
+      - label: Gallery widget
+        url: /javascript-development/jquery-widget/gallery.html
+      - label: List widget
+        url: /javascript-development/jquery-widget/list.html
+      - label: Magnifier widget
+        url: /javascript-development/jquery-widget/gallery/magnifier.html
+      - label: Loader widget
+        url: /javascript-development/jquery-widget/loader.html
+      - label: Menu widget
+        url: /javascript-development/jquery-widget/menu.html
+      - label: Modal widget
+        url: /javascript-development/jquery-widget/modal.html
+      - label: Navigation widget
+        url: /javascript-development/jquery-widget/navigation.html
+      - label: Prompt widget
+        url: /javascript-development/jquery-widget/prompt.html
+      - label: QuickSearch widget
+        url: /javascript-development/jquery-widget/quicksearch.html
+      - label: Tabs widget
+        url: /javascript-development/jquery-widget/tabs.html

@@ -1,0 +1,330 @@
+label: Installation Guide
+pages:
+  - label: How to get the Magento software
+    url: /install/getting-started.html
+  - label: Installation flow diagram
+    url: /install/getting-started/installation-flow-diagram.html
+  - label: Just the basics
+    children:
+      - label: Is the Magento software installed already?
+        url: /install/basics/check-magento.html
+      - label: What operating system is my server running?
+        url: /install/basics/check-server-os.html
+      - label: >-
+          How do I log in to my Magento server using a terminal, command prompt,
+          or SSH?
+        url: /install/basics/ssh-login.html
+      - label: What's the difference between a module and a component?
+        url: /install/basics/modules.html
+      - label: What is the software that the Magento server needs to run?
+        url: /install/basics/system-requirements.html
+      - label: What is a docroot?
+        url: /install/basics/docroot.html
+  - label: Getting Started
+    children:
+      - label: Helpful resources
+        url: /install/getting-started/resources.html
+        children:
+          - label: Installation quick reference (tutorial)
+            url: /install/getting-started/quick-reference.html
+          - label: Installation flow diagram
+            url: /*remove
+          - label: Installation roadmap (reference)
+            url: /install/getting-started/roadmap.html
+      - label: Magento system requirements
+        url: /*remove
+        children:
+          - label: Magento technology stack requirements
+            url: /install/getting-started/system-requirements.html
+          - label: Supported browsers
+            url: /install/getting-started/system-requirements/browsers.html
+          - label: Transport Layer Security (TLS) requirements
+            children:
+              - label: TLS 1.2 requirement for PayPal
+                url: /install/getting-started/system-requirements/paypal-tls.html
+              - label: TLS requirement for repo.magento.com
+                url: /install/getting-started/system-requirements/magento-tls.html
+      - label: Prerequisites
+        url: /install/getting-started/prerequisites.html
+        children:
+          - label: Apache
+            url: /install/getting-started/apache.html
+          - label: nginx
+            url: /install/getting-started/nginx.html
+          - label: PHP
+            url: /install-gde/prereq/php-centos-ubuntu.html
+            include_versions:
+              - '2.3'
+            children:
+              - label: Required PHP settings
+                url: /install/getting-started/php/settings.html
+                include_versions:
+                  - '2.3'
+          - label: PHP
+            include_versions:
+              - '2.1'
+              - '2.2'
+            children:
+              - label: PHP for Centos
+                url: /install/getting-started/php/centos.html
+                include_versions:
+                  - '2.1'
+                  - '2.2'
+              - label: PHP for Ubuntu
+                url: /install/getting-started/php/ubuntu.html
+                include_versions:
+                  - '2.1'
+                  - '2.2'
+              - label: Required PHP settings
+                url: /install/getting-started/php/settings.html
+                include_versions:
+                  - '2.1'
+                  - '2.2'
+          - label: MySQL
+            url: /install/getting-started/mysql.html
+          - label: Get your authentication keys
+            url: /install/getting-started/magento-authentication-keys.html
+          - label: Magento file system ownership and permissions
+            children:
+              - label: Overview of ownership and permissions
+                url: >-
+                  /install/getting-started/file-system-ownership-permissions.html
+              - label: Set pre-installation ownership and permissions
+                url: >-
+                  /install/getting-started/file-system-ownership-permissions/setup.html
+          - label: RabbitMQ
+            url: /install/getting-started/rabbitmq.html
+            include_versions:
+              - '2.3'
+          - label: RabbitMQ (Magento Commerce only)
+            url: /install/getting-started/rabbitmq.html
+            include_versions:
+              - '2.2'
+              - '2.1'
+              - '2.0'
+          - label: Set up a remote MySQL database connection
+            url: /install/getting-started/mysql/remote-connection.html
+          - label: SELinux and iptables
+            url: /install/getting-started/security.html
+          - label: Optional software
+            url: /install/getting-started/optional-software.html
+          - label: Set up the updater
+            url: /*remove
+      - label: Get the Magento software
+        url: /install/getting-started/get-magento.html
+      - label: Install Magento using Composer
+        url: /install/composer.html
+        include_versions:
+          - '2.1'
+          - '2.2'
+          - '2.3'
+      - label: (Easy) Install the Magento archive on your server
+        url: /install/methods/archive.html
+      - label: (Integrator) Integrator installation
+        url: /install/methods/composer.html
+        include_versions:
+          - '2.0'
+        children:
+          - label: Get the Magento Open Source metapackage
+            url: /install/methods/composer/get-magento-open-source.html
+          - label: Get the Magento Commerce metapackage
+            url: /install/methods/composer/get-magento-enterprise.html
+      - label: (Contributor) Clone the Magento repository
+        url: /install/methods/git.html
+        children:
+          - label: Update installation dependencies
+            url: /install/methods/git/update-dependencies.html
+      - label: Get help with your installation
+        url: /*combine/remove
+      - label: Install options
+        url: /install/methods.html
+  - label: Setup Wizard Install
+    children:
+      - label: Installation roadmap (reference)
+        url: /install/web-setup-wizard/roadmap.html
+      - label: Install optional sample data modules
+        url: /install/web-setup-wizard/sample.data.html
+        children:
+          - label: Install using Composer
+            url: /install/web-setup-wizard/composer-sample-data.html
+          - label: Install by cloning repositories
+            url: /install/web-setup-wizard/git-sample-data.html
+      - label: Setup Wizard installation
+        url: /install/web-setup-wizard.html
+        children:
+          - label: Step 1. Readiness check
+            url: /install/web-setup-wizard/getting-started.html
+          - label: Step 2. Add a Database
+            url: /combine
+          - label: Step 3. Web Configuration
+            url: /combine
+          - label: Step 4. Customize Your Store
+            url: /combine
+          - label: Step 5. Create Admin Account
+            url: /combine
+          - label: Step 6. Install
+            url: /combine
+      - label: Post-installation
+        url: /install/post-install.html
+  - label: Command Line Installation
+    children:
+      - label: Installation roadmap (reference)
+        url: /install/cli/roadmap.html
+      - label: Install optional sample data modules
+        url: /install/command-line/sample-data.html
+        children:
+          - label: Install using Composer
+            url: /install/command-line/composer-sample-data.html
+          - label: Install by cloning repositories
+            url: /install/command-line/git-sample-data.html
+      - label: Install the Magento software using the command line
+        url: /install/command-line.html
+        children:
+          - label: Get started with the command-line installation
+            url: /install/command-line/getting-started.html
+          - label: Install the Magento software
+            url: /install/command-line/install.html
+          - label: Uninstall or reinstall Magento
+            url: /install/command-line/uninstall-reinstall.html
+          - label: Display or change the Admin URI
+            url: /install/command-line/adminurl.html
+          - label: Remove sample data modules or update sample data
+            url: /install/command-line/manage-sample-data.html
+          - label: Enable or disable modules
+            url: /install/command-line/enable-disable-modules.html
+          - label: Uninstall modules
+            url: /install/command-line/uninstall-module.html
+          - label: Create or update the deployment configuration
+            url: /install/command-line/configure-deployment.html
+          - label: Enable or disable maintenance mode
+            url: /install/command-line/maintenance-mode.html
+          - label: Create the Magento database schema
+            url: /install/command-line/configure-database.html
+          - label: Update the Magento database schema and data
+            url: /install/command-line/upgrade-database.html
+          - label: Configure the store
+            url: /install/command-line/configure-store.html
+          - label: 'Create, edit, or unlock a Magento administrator account'
+            url: /install/command-line/admin.html
+          - label: 'Back up and roll back the file system, media, and database'
+            url: /install/command-line/backup.html
+          - label: Uninstall themes Composer packages
+            url: /install/command-line/uninstall-theme.html
+          - label: Uninstall language packages
+            url: /install/command-line/uninstall-language-package.html
+      - label: 'Contributing developers—update, reinstall Magento'
+        url: /install/methods/git.html
+        children:
+          - label: Update the Magento application
+            url: /install/methods/git/update.html
+          - label: Add or update components
+            url: /install/methods/git/add-update-components.html
+          - label: Change to a released version
+            url: /install/methods/git/downgrade.html
+          - label: Reinstall the Magento software
+            url: /install/methods/git/reinstall.html
+      - label: Post-installation
+        url: /install/verify-install.html
+  - label: Post Installation
+    children:
+      - label: Verify the installation
+        url: /install/post-install/verify-magento-installation.html
+      - label: Configure the Magento application
+        url: /install/post-install/configuration.html
+      - label: Optionally set a umask
+        url: /install/post-install/set-umask.html
+      - label: Appendix—Magento file system ownership and appendix (legacy)
+        url: /install/post-install/legacy-file-system-ownership.html
+      - label: Install sample data after Magento
+        url: /install/post-install/git-sample-data.html
+        children:
+          - label: Install using Composer
+            url: /install/post-install/sample-data/composer.html
+          - label: Install by cloning repositories
+            url: /install/post-install/sample-data/git.html
+  - label: Troubleshooting
+    children:
+      - label: Access issues
+        children:
+          - label: Cannot access Magento software in a web browser
+            url: /install/troubleshooting/access/browser.html
+          - label: >-
+              503 (Service Unavailable) errors accessing Magento software in a
+              web browser
+            url: /install/troubleshooting/access/service-unavailable.html
+          - label: >-
+              After installing, images and stylesheets do not load; only text
+              displays, no graphics
+            url: /install/troubleshooting/access/no-styles-images.html
+          - label: Exceptions during installation
+            url: /install/troubleshooting/access/exceptions.html
+          - label: Cannot write to the var/generation directory
+            url: /install/troubleshooting/access/permissions.html
+          - label: Installation dependencies not met
+            url: /install/troubleshooting/access/unmet-dependencies.html
+          - label: Error after logging in to the Magento Admin
+            url: /install/troubleshooting/access/admin-error.html
+      - label: Errors during installation
+        children:
+          - label: Installation stops at about 70%
+            url: /install/troubleshooting/general/install-stopped.html
+          - label: Cannot install using nginx
+            url: /install/troubleshooting/general/web-setup-wizard.html
+          - label: 'During installation, fatal PDO error displays'
+            url: /install/troubleshooting/php/fatal-pdo-error.html
+          - label: 'During installation, Reflection Exception error'
+            url: /install/troubleshooting/php/reflection-exception.html
+          - label: 'During installation, exception SessionHandler::read()'
+            url: /install/troubleshooting/php/session-handler.html
+          - label: Download fails because of changes in Composer
+            url: /install/troubleshooting/general/composer-error.html
+          - label: Unknown module Magento_BundleSampleData
+            url: /install/troubleshooting/general/unkown-module.html
+          - label: Installation fails; cannot create install.log
+            url: /install/troubleshooting/general/install-log.html
+          - label: Errors installing optional sample data
+            url: /install/troubleshooting/general/sample-data.html
+          - label: 'During installation, xdebug maximum function nesting level error'
+            url: /install/troubleshooting/php/xdebug.html
+      - label: Readiness check issues
+        children:
+          - label: Component dependency readiness issues
+            url: /install/troubleshooting/readiness-check/dependency-conflict.html
+          - label: cron readiness check issues
+            url: /install/troubleshooting/readiness-check/cron.html
+          - label: File permissions readiness check issues
+            url: /install/troubleshooting/readiness-check/permissions.html
+          - label: PHP version readiness check issues
+            url: /install/troubleshooting/readiness-check/php-version.html
+      - label: GitHub errors
+        children:
+          - label: Cannot clone the Magento GitHub repository
+            url: /install/troubleshooting/git/clone.html
+          - label: git pull origin develop fails when updating the Magento software
+            url: /install/troubleshooting/git/pull-origin-update.html
+      - label: PHP errors
+        children:
+          - label: Resolve an illegal offset error
+            url: /install/troubleshooting/php/opcache.html
+          - label: PHP settings errors
+            url: /install/troubleshooting/php/settings.html
+          - label: The PHP mcrypt extension is not installed properly
+            url: /install/troubleshooting/php/mcrypt.html
+          - label: 'During installation, PHP date warning'
+            url: /install/troubleshooting/php/date-warning.html
+      - label: Other issues
+        children:
+          - label: Known issues that affect installation
+            url: /install/troubleshooting/other/known-issues.html
+          - label: Error 'MySQL server has gone away' during installation
+            url: /install/troubleshooting/mysql/server-has-gone-away.html
+          - label: Segmentation fault during rollback
+            url: /install/troubleshooting/other/rollback-segmentation-fault.html
+          - label: 'SQLSTATE[HY000] [2002] No such file or directory'
+            url: /install/troubleshooting/php/pdo-exception.html
+          - label: Cannot run 'composer install'
+            url: /install/troubleshooting/other/composer.html
+  - label: How Tos
+    children:
+      - label: Modify docroot to improve security
+        url: /install-gde/tutorials/change-docroot-to-pub.html

@@ -1,0 +1,32 @@
+label: Admin Style Guide
+pages:
+  - label: Admin Style Guide
+    children:
+      - label: Introduction
+        url: /design-style.html
+  - label: Design
+    children:
+      - label: Color
+        url: /design-style/color.html
+      - label: Iconography
+        url: /design-style/iconography.html
+      - label: Page Grids
+        url: /design-style/pagegrid.html
+      - label: Typography
+        url: /design-style/typography.html
+  - label: Writing and Content
+    children:
+      - label: Voice and Tone
+        url: /design-style/content-voice-tone.html
+      - label: Errors and Messages Writing
+        url: /design-style/errors-and-messages.html
+      - label: Buttons and Links Usage
+        url: /design-style/buttons-links-usage.html
+      - label: Capitalization
+        url: /design-style/capitalization.html
+      - label: Headings and Organization
+        url: /design-style/headings-and-organization.html
+      - label: Content Formats
+        url: /design-style/content-formats.html
+      - label: Number Formats
+        url: /design-style/number-formats.html

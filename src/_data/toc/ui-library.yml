@@ -1,0 +1,44 @@
+label: UI Components
+pages:
+  - label: Overview
+    url: /ui-components.html
+  - label: Using UI components client-side
+    url: /ui-components/client-side.html
+  - label: Listing/Grid Component
+    url: /ui-components/components/listing.html
+    children:
+      - label: Grid search indexing
+        url: /ui-components/grid-search-indexing.html
+  - label: Listing/Grid Secondary Components
+    url: /ui-components/components.html
+    children:
+      - label: Filter Component
+        url: /ui-components/components/filter.html
+      - label: Pagination Component
+        url: /ui-components/components/pagination.html
+      - label: MassActions Component
+        url: /ui-components/components/massactions.html
+      - label: TreeMassAction Component
+        url: /ui-components/components/treemassaction.html
+      - label: Column Component
+        url: /ui-components/components/column.html
+      - label: UI-select Component
+        url: /ui-components/components/ui-select.html
+      - label: Multiselect Component
+        url: /ui-components/components/multiselect.html
+      - label: Inline Edit Component
+        url: /ui-components/components/inline.html
+      - label: Bookmark Component
+        url: /ui-components/components/bookmark.html
+      - label: Resize Component
+        url: /ui-components/components/resize.html
+      - label: Sticky Header Component
+        url: /ui-components/components/sticky-header.html
+      - label: Export Button Component
+        url: /ui-components/components/exportbutton.html
+      - label: File Uploader Component
+        url: /ui-components/components/fileuploader.html
+  - label: Form Component
+    url: /ui-components/components/form.html
+  - label: definition.xml
+    url: /ui-components/definition-xml.html

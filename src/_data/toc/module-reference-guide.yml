@@ -1,0 +1,154 @@
+label: Module Reference Guide
+pages:
+  - label: INTRODUCTION
+    url: /module-reference.html
+  - label: Sales
+    url: /module-reference/open-source/sales.html
+    include_versions:
+      - '2.0'
+  - label: Open Source
+    include_versions:
+      - '2.1'
+      - '2.2'
+    children:
+      - label: Analytics
+        url: /module-reference/open-source/analytics.html
+        include_versions:
+          - '2.2'
+      - label: CatalogAnalytics
+        url: /module-reference/open-source/catalog-analytics.html
+        include_versions:
+          - '2.2'
+      - label: CustomerAnalytics
+        url: /module-reference/open-source/customer-analytics.html
+        include_versions:
+          - '2.2'
+      - label: Instant Purchase
+        url: /module-reference/open-source/instant-purchase.html
+        include_versions:
+          - '2.2'
+          - '2.3'
+      - label: QuoteAnalytics
+        url: /module-reference/open-source/quote-analytics.html
+        include_versions:
+          - '2.2'
+      - label: ReviewAnalytics
+        url: /module-reference/open-source/review-analytics.html
+        include_versions:
+          - '2.2'
+      - label: Sales
+        url: /module-reference/open-source/sales.html
+        include_versions:
+          - '2.1'
+          - '2.2'
+      - label: SalesAnalytics
+        url: /module-reference/open-source/sales-analytics.html
+        include_versions:
+          - '2.2'
+      - label: Signifyd
+        url: /module-reference/open-source/signifyd.html
+        include_versions:
+          - '2.2'
+      - label: WishlistAnalytics
+        url: /module-reference/open-source/wishlist-analytics.html
+        include_versions:
+          - '2.2'
+  - label: Commerce
+    include_versions:
+      - '2.1'
+      - '2.2'
+    children:
+      - label: BundleStaging
+        url: /module-reference/commerce/bundle-staging.html
+      - label: CatalogImportExportStaging
+        url: /module-reference/commerce/catalog-import-export-staging.html
+      - label: CatalogInventoryStaging
+        url: /module-reference/commerce/catalog-inventory-staging.html
+      - label: CatalogRuleStaging
+        url: /module-reference/commerce/catalog-rule-staging.html
+      - label: CatalogStaging
+        url: /module-reference/commerce/catalog-staging.html
+      - label: CatalogUrlRewriteStaging
+        url: /module-reference/commerce/catalog-url-rewrite-staging.html
+      - label: CheckoutStaging
+        url: /module-reference/commerce/checkout-staging.html
+      - label: CmsStaging
+        url: /module-reference/commerce/cms-staging.html
+      - label: ConfigurableProductStaging
+        url: /module-reference/commerce/configurable-product-staging.html
+      - label: DownloadableStaging
+        url: /module-reference/commerce/downloadable-staging.html
+      - label: GiftCardStaging
+        url: /module-reference/commerce/gift-card-staging.html
+      - label: GiftMessageStaging
+        url: /module-reference/commerce/gift-message-staging.html
+      - label: GiftWrappingStaging
+        url: /module-reference/commerce/gift-wrapping-staging.html
+      - label: GoogleOptimizerStaging
+        url: /module-reference/commerce/google-optimizer-staging.html
+      - label: GroupedProductStaging
+        url: /module-reference/commerce/grouped-product-staging.html
+      - label: LayeredNavigationStaging
+        url: /module-reference/commerce/layered-navigation-staging.html
+      - label: MsrpStaging
+        url: /module-reference/commerce/msrp-staging.html
+      - label: PaymentStaging
+        url: /module-reference/commerce/payment-staging.html
+      - label: ProductVideoStaging
+        url: /module-reference/commerce/product-video-staging.html
+      - label: ReviewStaging
+        url: /module-reference/commerce/review-staging.html
+      - label: RmaStaging
+        url: /module-reference/commerce/rma-staging.html
+      - label: SalesRuleStaging
+        url: /module-reference/commerce/sales-rule-staging.html
+      - label: SearchStaging
+        url: /module-reference/commerce/search-staging.html
+      - label: Staging
+        url: /module-reference/commerce/staging.html
+      - label: WeeeStaging
+        url: /module-reference/commerce/weee-staging.html
+  - label: B2B
+    include_versions:
+      - '2.2'
+    children:
+      - label: B2b
+        url: /module-reference/b2b/b2b.html
+      - label: BundleNegotiableQuote
+        url: /module-reference/b2b/bundle-negotiable-quote.html
+      - label: BundleRequisitionList
+        url: /module-reference/b2b/bundle-requisition-list.html
+      - label: BundleSharedCatalog
+        url: /module-reference/b2b/bundle-shared-catalog.html
+      - label: Company
+        url: /module-reference/b2b/company.html
+      - label: CompanyCredit
+        url: /module-reference/b2b/company-credit.html
+      - label: CompanyPayment
+        url: /module-reference/b2b/company-payment.html
+      - label: ConfigurableNegotiableQuote
+        url: /module-reference/b2b/configurable-negotiable-quote.html
+      - label: ConfigurableRequisitionList
+        url: /module-reference/b2b/configurable-requisition-list.html
+      - label: ConfigurableSharedCatalog
+        url: /module-reference/b2b/configurable-shared-catalog.html
+      - label: GiftCardNegotiableQuote
+        url: /module-reference/b2b/gift-card-negotiable-quote.html
+      - label: GiftCardRequisitionList
+        url: /module-reference/b2b/gift-card-negotiable-quote.html
+      - label: GiftCardSharedCatalog
+        url: /module-reference/b2b/gift-card-shared-catalog.html
+      - label: GroupedRequisitionList
+        url: /module-reference/b2b/GroupedRequisitionList.html
+      - label: GroupedSharedCatalog
+        url: /module-reference/b2b/grouped-shared-catalog.html
+      - label: NegotiableQuote
+        url: /module-reference/b2b/negotiable-quote.html
+      - label: NegotiableQuoteSharedCatalog
+        url: /module-reference/b2b/negotiable-quote-shared-catalog.html
+      - label: QuickOrder
+        url: /module-reference/b2b/quick-order/quick-order.html
+      - label: RequisitionList
+        url: /module-reference/b2b/requisition-list.html
+      - label: SharedCatalog
+        url: /module-reference/b2b/shared-catalog.html

@@ -1,0 +1,357 @@
+label: Configuration Guide
+pages:
+  - label: Introduction
+    url: /configure.html
+  - label: Security settings
+    children:
+      - label: Secure cron.php to run in a browser
+        url: /configure/security/cron.html
+      - label: X-Frame-Options header
+        url: /configure/security/cache-poisoning.html
+      - label: Prevent cache poisoning
+        url: /configure/security/x-frame-options-header.html
+      - label: Two-Factor Authentication
+        url: /security/two-factor-authentication.html
+        include_versions:
+          - '2.1'
+          - '2.2'
+      - label: Google reCAPTCHA
+        url: /security/google-recaptcha.html
+        include_versions:
+          - '2.1'
+          - '2.2'
+  - label: Magento application initialization and bootstrap
+    url: /configure/application-initialization.html
+    children:
+      - label: Set the value of bootstrap parameters
+        url: /configure/application-initialization/set-bootstrap-parameters.html
+      - label: About Magento modes
+        url: /configure/application-initialization/magento-modes.html
+      - label: Customize base directory paths (MAGE_DIRS)
+        url: >-
+          /configure/application-initialization/customize-base-directory-paths.html
+      - label: Enable profiling (MAGE_PROFILER)
+        url: /configure/application-initialization/enable-profiling.html
+  - label: Pipeline Deployment
+    include_versions:
+      - '2.2'
+      - '2.3'
+    url: /configure/deployment.html
+    children:
+      - label: Overview
+        url: /configure/deployment/pipeline.html
+      - label: Technical Details
+        url: /configure/deployment/pipeline/technical-details.html
+      - label: Development System Setup
+        url: /configure/deployment/pipeline/development-system.html
+      - label: Build System Setup
+        url: /configure/deployment/pipeline/build-system.html
+      - label: Production System Setup
+        url: /configure/deployment/pipeline/production-system.html
+      - label: File systems access permissions
+        url: /configure/deployment/file-system-ownership-permissions.html
+      - label: Examples
+        children:
+          - label: Shared configuration
+            url: /configure/deployment/pipeline/shared-configuration-example.html
+          - label: Using CLI commands
+            url: /configure/deployment/pipeline/command-line-example.html
+          - label: Using environment variables
+            url: /configure/deployment/pipeline/environment-variables-example.html
+  - label: Single machine deployment
+    include_versions:
+      - '2.2'
+      - '2.3'
+    url: /configure/deployment/single-machine.html
+  - label: Command line configuration
+    url: /configure/command-line.html
+    children:
+      - label: Get started with command-line configuration
+        url: /configure/command-line/getting-started.html
+      - label: Logging
+        include_versions:
+          - '2.2'
+          - '2.3'
+        url: /configure/command-line/logging.html
+      - label: Manage the cache
+        url: /configure/command-line/manage-cache.html
+      - label: Manage the indexers
+        url: /configure/command-line/manage-indexers.html
+      - label: Configure and run cron
+        url: /configure/command-line/cron.html
+      - label: Code compiler
+        url: /configure/command-line/compile-code.html
+      - label: Set the Magento mode
+        url: /configure/command-line/set-magento-mode.html
+      - label: URN highlighter
+        url: /configure/command-line/highlight-uniform-resource-names.html
+      - label: Dependency reports
+        url: /configure/command-line/run-dependency-reports.html
+      - label: Configuration management
+        include_versions:
+          - '2.2'
+          - '2.3'
+        children:
+          - label: Export the configuration
+            url: /configure/command-line/export-configuration.html
+          - label: Set configuration values
+            url: /configure/command-line/manage-configuration.html
+          - label: Import data from configuration files
+            url: /configure/command-line/import-configuration.html
+      - label: Translation dictionaries and language packages
+        url: /configure/command-line/localization.html
+      - label: Static view files deployment
+        children:
+          - label: Static files deployment strategies
+            include_versions:
+              - '2.2'
+              - '2.3'
+            url: /configure/command-line/static-content.html
+          - label: Deploy static view files
+            url: /configure/command-line/static-content/deploy.html
+      - label: Create symlinks to LESS files
+        url: /configure/command-line/create-stylesheet-symlinks.html
+      - label: Run unit tests
+        url: /configure/command-line/run-unit-tests.html
+      - label: Convert layout XML files
+        url: /configure/command-line/convert-layout-xml-files.html
+      - label: Generate data for performance testing
+        url: /configure/command-line/generate-data-for-performance-testing.html
+      - label: Run the support utilities (Magento Commerce only)
+        url: /configure/command-line/run-support-utilities.html
+  - label: Magento configuration files
+    url: /configure/magento-configuration-files.html
+    children:
+      - label: Magento's deployment configuration
+        url: /configure/magento-configuration-files/deployment.html
+      - label: Module configuration files
+        url: /configure/magento-configuration-files/modules.html
+      - label: Create or extend configuration types
+        url: /configure/magento-configuration-files/create-extend-types.html
+      - label: Disable module output
+        include_versions:
+          - '2.2'
+          - '2.3'
+        url: /configure/magento-configuration-files/disable-module-output.html
+      - label: Configuration reference
+        include_versions:
+          - '2.1'
+          - '2.2'
+          - '2.3'
+        children:
+          - label: Sensitive and system-specific
+            url: /configure/deployment/reference/sensitive-settings.html
+            include_versions:
+              - '2.1'
+              - '2.2'
+              - '2.3'
+          - label: Payment configuration paths reference
+            url: /configure/deployment/reference/payment-paths.html
+            include_versions:
+              - '2.1'
+              - '2.2'
+              - '2.3'
+          - label: Other configuration paths reference
+            url: /configure/deployment/reference/other.html
+            include_versions:
+              - '2.1'
+              - '2.2'
+              - '2.3'
+          - label: Magento Commerce for B2B Extension configuration paths reference
+            url: /config-guide/prod/config-reference-b2b.html
+            include_versions:
+              - '2.2'
+              - '2.3'
+          - label: .gitignore reference
+            url: /configure/deployment/reference/gitignore.html
+            include_versions:
+              - '2.2'
+              - '2.3'
+          - label: Use environment variables to override configuration settings
+            url: /configure/deployment/reference/environment-variables.html
+            include_versions:
+              - '2.1'
+              - '2.2'
+              - '2.3'
+          - label: config.php reference
+            url: /configure/deployment/reference/config-php.html
+            include_versions:
+              - '2.2'
+              - '2.3'
+          - label: env.php reference
+            url: /configure/deployment/reference/env-php.html
+            include_versions:
+              - '2.2'
+              - '2.3'
+  - label: Configure caching
+    url: /configure/cache.html
+    children:
+      - label: Associate cache frontends with cache types
+        url: /configure/cache/types.html
+      - label: Low-level cache options
+        url: /configure/cache/options.html
+      - label: Static content signing
+        include_versions:
+          - '2.2'
+          - '2.3'
+        url: /configure/cache/static-content-signing.html
+  - label: Configure Redis
+    url: /configure/caching/redis.html
+    children:
+      - label: Use Redis for the Magento page and default cache
+        url: /configure/caching/redis/use-redis.html
+      - label: Use Redis for session storage
+        url: /configure/caching/redis/session-storage.html
+  - label: Configure and use Varnish
+    url: /configure/caching/varnish.html
+    children:
+      - label: Install Varnish
+        url: /configure/caching/varnish/install.html
+      - label: Configure Varnish and your web server
+        url: /configure/caching/varnish/web-server-setup.html
+      - label: Configure Magento to use Varnish
+        url: /configure/caching/varnish/use-varnish.html
+      - label: Advanced Varnish configuration
+        include_versions:
+          - '2.2'
+          - '2.3'
+        url: /configure/caching/varnish/advanced-configuration.html
+      - label: How Magento cache clearing works with multiple Varnish instances
+        include_versions:
+          - '2.2'
+          - '2.3'
+        url: /configure/caching/varnish/multiple-instances.html
+      - label: Final verification
+        url: /configure/caching/varnish/verify.html
+      - label: How Magento cache clearing works with Varnish
+        url: /configure/caching/varnish/cache-clearing.html
+      - label: How Varnish caching works
+        url: /configure/caching/varnish/how-it-works.html
+      - label: Troubleshooting 503 errors
+        url: >-
+          /configure/caching/varnish/troubleshoot-503-backend-fetch-failures.html
+  - label: Use memcached for session storage
+    url: /configure/caching/session-storage.html
+    children:
+      - label: 'Install, configure, verify memcached on Ubuntu'
+        url: /configure/caching/session-storage/memcache-ubuntu.html
+      - label: 'Install, configure, verify memcached on CentOS'
+        url: /configure/caching/session-storage/memcache-centos.html
+      - label: Configure Magento to use memcached
+        url: /configure/caching/session-storage/use-memcache.html
+  - label: Multiple websites or stores
+    url: /configure/multi-site.html
+    children:
+      - label: 'Set up multiple websites, stores, and store views in the Admin'
+        url: /configure/multi-site/setup-admin.html
+      - label: Tutorial—Set up multiple websites or stores with nginx
+        url: /configure/multi-site/setup-nginx.html
+      - label: Tutorial—Set up multiple websites with Apache
+        url: /configure/multi-site/setup-apache.html
+  - label: Set up a custom cron job and cron group
+    url: /configure/custom-cron.html
+    children:
+      - label: Custom cron job and cron group reference
+        url: /configure/custom-cron/reference.html
+      - label: Configure a custom cron job and cron group (tutorial)
+        url: /configure/custom-cron/tutorial.html
+  - label: Configure the database profiler
+    url: /configure/databse-profiler.html
+  - label: Install and configure Elasticsearch (Magento Commerce only)
+    include_versions:
+      - '2.1'
+      - '2.2'
+    url: /configure/search/elastic-search.html
+    children:
+      - label: Configure nginx and Elasticsearch
+        url: /configure/search/elastic-search/nginx.html
+      - label: Configure Apache and Elasticsearch
+        url: /configure/search/elastic-search/apache.html
+      - label: Configure Elasticsearch stopwords
+        url: /configure/search/elastic-search/stopwords.html
+      - label: Configure Magento to use Elasticsearch
+        url: /configure/search/elastic-search/use-elastic-search.html
+  - label: Install and configure Elasticsearch
+    include_versions:
+      - '2.3'
+    url: /configure/search/elastic-search.html
+    children:
+      - label: Configure nginx and Elasticsearch
+        url: /configure/search/elastic-search/nginx.html
+      - label: Configure Apache and Elasticsearch
+        url: /configure/search/elastic-search/apache.html
+      - label: Configure Elasticsearch stopwords
+        url: /configure/search/elastic-search/stopwords.html
+      - label: Configure Magento to use Elasticsearch
+        url: /configure/search/elastic-search/use-elastic-search.html
+  - label: Message Queues (Magento Commerce only)
+    include_versions:
+      - '2.0'
+      - '2.1'
+      - '2.2'
+    url: /configure/message-queues.html
+    children:
+      - label: Manage message queues
+        url: /configure/message-queues/manage-queues.html
+  - label: Message Queues
+    include_versions:
+      - '2.3'
+    url: /configure/message-queues.html
+    children:
+      - label: Manage message queues
+        url: /configure/message-queues/manage-queues.html
+  - label: Install and configure Solr (Magento Commerce only)
+    include_versions:
+      - '2.0'
+      - '2.1'
+    url: /configure/search/solr.html
+    children:
+      - label: Configure Solr and Magento
+        url: /configure/search/solr/use-solr.html
+      - label: Prepare Solr for production
+        url: /configure/search/solr/prepare-for-production.html
+  - label: Split database performance solution (Magento Commerce only)
+    url: /configure/database/split-database-performance.html
+    children:
+      - label: Automatically configure master databases
+        url: >-
+          /configure/database/split-database-performance/auto-configure-master.html
+      - label: Manually configure master databases
+        url: >-
+          /configure/database/split-database-performance/manually-configure-master.html
+      - label: Verify split databases
+        url: /configure/database/split-database-performance/verify.html
+      - label: Set up optional database replication
+        url: /configure/database/setup-replication.html
+  - label: Custom Logging
+    url: /configure/logging.html
+    children:
+      - label: Magento logging in more detail
+        url: /configure/logging/magento-log-details.html
+      - label: Example - logging database activity
+        url: /configure/logging/database-activity-example.html
+  - label: How to locate your session files
+    url: /configure/caching/session-storage/locate-files.html
+  - label: Deploy Magento to production
+    url: /configure/deployment.html
+    include_versions:
+      - '2.0'
+      - '2.1'
+    children:
+      - label: Magento ownership and permissions in development and production
+        url: /configure/deployment/file-system-ownership-permissions.html
+      - label: Deploy to production
+        url: /configure/deployment/deploy-magento.html
+      - label: Single machine deployment
+        url: /configure/deployment/single-machine.html
+  - label: Optimization
+    include_versions:
+      - '2.0'
+      - '2.1'
+    children:
+      - label: Magento Optimization Guide
+        url: /configure/performance-optimization.html
+      - label: Development environment recommendations
+        include_versions:
+          - '2.1'
+        url: /config-guide/prod/development-environment.html

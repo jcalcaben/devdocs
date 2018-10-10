@@ -1,0 +1,232 @@
+label: PHP Developer Guide
+pages:
+  - label: Introduction
+    url: /extension-development.html
+    children:
+      - label: Developer roadmap
+        url: /extension-development/roadmap.html
+      - label: Introduction to Composer
+        url: /extension-development/core-concepts/composer.html
+      - label: Glossary of common terms
+        url: /remove
+  - label: Prepare (development quick start)
+    url: /remove
+    children:
+      - label: Component types
+        url: /extension-development/component-types.html
+      - label: About component file structure
+        url: /remove
+      - label: Extension repository structure
+        include_versions:
+          - '2.3'
+        url: /extension-development/build-tasks/repository-structure.html
+      - label: Roadmap for developing and packaging components
+        url: /remove
+      - label: Extension lifecycle
+        url: /extension-development/core-concepts/module-lifecycle.html
+  - label: Build
+    url: /extension-development/build-tasks.html
+    children:
+      - label: The di.xml file
+        url: /extension-development/files/di-xml.html
+      - label: Optimal development environment
+        include_versions:
+          - '2.1'
+          - '2.2'
+          - '2.3'
+        url: /extension-development/optimal-environment.html
+      - label: The composer.json file
+        url: /extension-development/files/composer-json.html
+      - label: Define your configuration files
+        url: /extension-development/build-tasks/configuration-files.html
+      - label: Create your component file structure
+        url: /extension-development/build-tasks/file-structure.html
+      - label: Register your component
+        url: /extension-development/build-tasks/register.html
+      - label: URN schema validation
+        url: /extension-development/validate-urn-schema.html
+      - label: Name your component
+        url: /extension-development/build-tasks/name.html
+      - label: Component load order
+        url: /extension-development/build-tasks/load-order.html
+      - label: Enable or disable your component
+        url: /extension-development/build-tasks/enable-disable.html
+  - label: Package
+    url: /remove
+    children:
+      - label: Package a component
+        url: /extension-development/package.html
+      - label: Upload your component to the Magento Marketplace
+        url: /extension-development/package/marketplace-upload.html
+  - label: Validate
+    url: /remove
+    children:
+      - label: Test your component
+        url: /extension-development/test.html
+  - label: Partial caching
+    url: /extension-dev-guide/cache/partial-caching.html
+    children:
+      - label: Create custom cache engines
+        url: /extension-dev-guide/cache/partial-caching/database-caching.html
+      - label: Create a cache type
+        url: /extension-dev-guide/cache/partial-caching/create-cache-type.html
+  - label: Full page caching
+    url: /extension-dev-guide/cache/page-caching.html
+    children:
+      - label: Public content
+        url: /extension-dev-guide/cache/page-caching/public-content.html
+      - label: Private content
+        url: /extension-dev-guide/cache/page-caching/private-content.html
+  - label: Add CLI commands
+    url: /extension-development/core-concepts/cli-command.html
+    children:
+      - label: Command naming guidelines
+        url: /extension-development/core-concepts/cli-command/naming.html
+      - label: How to add CLI commands
+        url: /extension-development/tutorials/cli-command.html
+  - label: Staging (Magento Commerce only)
+    include_versions:
+      - '2.1'
+      - '2.2'
+      - '2.3'
+    url: /extension-development/core-concepts/staging.html
+  - label: Component development
+    url: /remove
+    children:
+      - label: Service contracts
+        url: /extension-development/core-concepts/service-contracts.html
+      - label: Public interfaces &amp; APIs
+        url: /extension-development/core-concepts/public-interfaces-api.html
+      - label: Service contract design patterns
+        url: >-
+          /extension-development/core-concepts/service-contracts/design-patterns.html
+      - label: Dependency injection
+        url: /extension-development/core-concepts/dependency-injection.html
+      - label: ObjectManager
+        url: >-
+          /extension-development/core-concepts/dependency-injection/object-manager.html
+      - label: Events and observers
+        url: /extension-development/class-types/observer.html
+      - label: Factories
+        url: /extension-development/class-types/factory.html
+      - label: Proxies
+        url: /extension-development/class-types/proxy.html
+      - label: Code generation
+        url: /extension-development/core-concepts/code-generation.html
+      - label: EAV and extension attributes
+        url: /extension-development/core-concepts/attributes.html
+      - label: Plugins (Interceptors)
+        url: /extension-development/class-types/plugin.html
+      - label: Routing
+        url: /extension-development/core-concepts/routing.html
+      - label: Indexing
+        children:
+          - label: Indexing overview
+            url: /extension-development/core-concepts/indexers.html
+          - label: Indexer optimization
+            include_versions:
+              - '2.2'
+              - '2.3'
+            url: /extension-development/indexers/optimization.html
+          - label: Adding a custom indexer
+            url: /extension-development/core-concepts/indexers/custom.html
+      - label: Declarative schema
+        include_versions:
+          - '2.3'
+        children:
+          - label: Declarative schema overview
+            url: /extension-development/core-concepts/declarative-schema.html
+          - label: Migrate install/upgrade scripts to declarative schema
+            url: >-
+              /extension-development/core-concepts/declarative-schema/migration-commands.html
+          - label: Configure declarative schema
+            url: /extension-development/core-concepts/database-schema.html
+          - label: Develop data and schema patches
+            url: /extension-development/core-concepts/database-schema/patches.html
+      - label: Web APIs
+        include_versions:
+          - '2.3'
+        children:
+          - label: Configure services as web APIs
+            url: /extension-development/services/web-api.html
+          - label: Set custom routes
+            url: /extension-development/webapi/custom-routes.html
+      - label: Message Queues
+        children:
+          - label: Message queues overview
+            url: /extension-development/core-concepts/message-queues.html
+          - label: Configure message Queues
+            url: /extension-development/core-concepts/message-queues/configure.html
+          - label: Migrate message queue configuration
+            include_versions:
+              - '2.1'
+              - '2.2'
+              - '2.3'
+            url: >-
+              /extension-development/core-concepts/message-queues/migrate-queues.html
+          - label: Bulk operations
+            include_versions:
+              - '2.2'
+              - '2.3'
+            url: >-
+              /extension-development/core-concepts/message-queues/bulk-operations.html
+          - label: Example bulk operations implementation
+            include_versions:
+              - '2.2'
+              - '2.3'
+            url: >-
+              /extension-development/core-concepts/message-queues/implement-bulk-operations.html
+      - label: Adding extension attributes to entity
+        url: /extension-development/core-concepts/attributes/adding.html
+      - label: Searching with repositories
+        include_versions:
+          - '2.2'
+          - '2.3'
+        url: /extension-development/core-concepts/repository.html
+      - label: Configure services as web APIs
+        include_versions:
+          - '2.0'
+          - '2.1'
+          - '2.2'
+        url: /extension-development/services/web-api.html
+      - label: Clear directories during development
+        url: /extension-development/build-tasks/clear-directories.html
+      - label: Adapters
+        url: /extension-development/class-types/adapter.html
+      - label: Variable Pool
+        include_versions:
+          - '2.3'
+        url: /extension-development/core-concepts/variable-pool.html
+  - label: Configuration
+    include_versions:
+      - '2.2'
+      - '2.3'
+    children:
+      - label: Sensitive Environment Settings
+        url: >-
+          /extension-development/core-concepts/sensitive-environment-settings.html
+      - label: Configuration Importers
+        url: /extension-development/class-types/configuration-importer.html
+  - label: Framework
+    include_versions:
+      - '2.2'
+      - '2.3'
+    children:
+      - label: Serialize Library
+        url: /extension-development/services/serialize-library.html
+  - label: Security
+    children:
+      - label: XSS Prevention
+        include_versions:
+          - '2.2'
+          - '2.3'
+        url: /extension-development/security/prevent-xss.html
+      - label: Non-secure functions
+        url: /extension-development/security/vulnerable-functions.html
+  - label: Versioning
+    url: /extension-development/core-concepts/versioning.html
+    children:
+      - label: Module version dependencies
+        url: /extension-development/core-concepts/versioning/dependencies.html
+      - label: Codebase changes
+        url: /extension-development/core-concepts/versioning/codebase-changes.html

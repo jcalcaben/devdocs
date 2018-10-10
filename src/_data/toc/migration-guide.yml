@@ -1,0 +1,45 @@
+label: Migration Guide
+pages:
+  - label: Overview
+    url: /migration.html
+    children:
+      - label: How migration works
+        url: /migration/overview.html
+      - label: Best practices and benchmarking
+        url: /migration/overview/best-practices.html
+      - label: Versions supported
+        url: /migration/overview/versions-supported.html
+  - label: Creating a migration plan
+    url: /migration/create-plan.html
+  - label: Data Migration Tool
+    url: /migration/tool.html
+    children:
+      - label: Preconditions
+        url: /migration/tool/preconditions.html
+      - label: Install Data Migration Tool
+        url: /migration/tool/install.html
+      - label: Upgrade Data Migration Tool
+        url: /migration/tool/upgrade.html
+      - label: Configure migration
+        url: /migration/tool/configure.html
+      - label: Extend the tool
+        url: /migration/extend.html
+  - label: Migrate using Data Migration Tool
+    url: /migration/use-migration-tool.html
+    children:
+      - label: Migrate settings
+        url: /migration/use-migration-tool/settings.html
+      - label: Migrate data
+        url: /migration/use-migration-tool/data.html
+      - label: Migrate changes
+        url: /migration/use-migration-tool/changes.html
+      - label: Follow-up (info and steps)
+        url: /migration/use-migration-tool/follow-up.html
+  - label: Data that needs to be migrated manually
+    url: /migration/use-migration-tool/manual-migration.html
+  - label: Troubleshooting
+    url: /migration/post-migration/troubleshooting.html
+  - label: After Migration
+    url: /migration/post-migration.html
+  - label: Data Migration Tool Technical Specification
+    url: /migration/overview/specifications.html
